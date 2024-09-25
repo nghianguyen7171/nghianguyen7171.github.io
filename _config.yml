@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: # Intelligent System # the website title (if blank, full name will be used instead)
+title:           # the website title (if blank, full name will be used instead)
 first_name: Nghia
 middle_name: Trong
 last_name: Nguyen
@@ -96,7 +96,7 @@ pinterest_id: # your pinterest id
 publons_id: # your ID on Publons
 quora_username: # your Quora username
 research_gate_profile: # your profile on ResearchGate
-scholar_userid: kl6Sz_wAAAAJ #qc6CJjYAAAAJ # your Google Scholar ID
+scholar_userid: kl6Sz_wAAAAJ  # your Google Scholar ID
 scopus_id: # your profile on Scopus
 semanticscholar_id: # your Semantic Scholar ID
 spotify_id: # your spotify id
@@ -342,7 +342,7 @@ scholar:
 enable_publication_badges:
   altmetric: true # Altmetric badge (Customization options: https://badge-docs.altmetric.com/index.html)
   dimensions: true # Dimensions badge (Customization options: https://badge.dimensions.ai/)
-  google_scholar: true # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
+  google_scholar: Google Scholar badge (https://scholar.google.com/citations?hl=vi&user=kl6Sz_wAAAAJ) #true
   inspirehep: true # Inspire HEP badge (https://help.inspirehep.net/knowledge-base/citation-metrics/)
 
 # Filter out certain bibtex entry keywords used internally from the bib output
