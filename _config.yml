@@ -135,9 +135,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 
 blog_name:  Intelligent System blog # blog_name will be displayed in your blog page
 blog_description: Intelligent System Blog is your gateway to understanding the latest advancements in artificial intelligence, machine learning, and cutting-edge technologies. 
-We explore how intelligent systems are shaping industries, solving complex problems, and transforming the future. 
-Whether you are a tech enthusiast, a professional in the AI field, or simply curious about the future of technology, our blog delivers in-depth articles, expert insights, and practical applications of intelligent systems. 
-Join us on a journey through the world of innovation, where technology meets intelligence.
+
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
