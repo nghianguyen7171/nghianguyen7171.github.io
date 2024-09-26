@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper entitled "Temporal Variational Autoencoder Model for In-hospital Clinical Emergency Prediction" has been accepted for publication in Biomedical Signal Processing & Control.
+Our paper entitled _"Temporal Variational Autoencoder Model for In-hospital Clinical Emergency Prediction"_ has been accepted for publication in the journal of **Biomedical Signal Processing & Control**.
