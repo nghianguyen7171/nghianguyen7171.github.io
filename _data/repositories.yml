@@ -1,14 +1,12 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - nghianguyen7171
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - nghianguyen7171/nghianguyen7171.github.io
+  - nghianguyen7171/Deep_CFL
+  - nghianguyen7171/new_mgsiameseTS
+  - nghianguyen7171/TVAE-RRS
+  - nghianguyen7171/beehealth
+  - nghianguyen7171/Fashion-Recognition-and-Recommendation-system
