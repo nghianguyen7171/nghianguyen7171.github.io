@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Intelligent System # the website title (if blank, full name will be used instead)
+title: # Intelligent System # the website title (if blank, full name will be used instead)
 first_name: Nghia
 middle_name: Trong
 last_name: Nguyen
