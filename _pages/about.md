@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Chonnam National University. Contacts: trongnghia7171@gmail.com.
+subtitle: <a href='#'>Affiliations</a>. Chonnam National University. 
 
 profile:
   align: right
