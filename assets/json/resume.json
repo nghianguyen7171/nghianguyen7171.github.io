@@ -6,13 +6,13 @@
     "email": "trongnghia7171@gmail.com",
     "phone": "010-8269-8068",
     "url": "https://nghianguyen7171.github.io/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "summary": "AI researcher",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "Hanoi",
+      "postalCode": "11600",
+      "city": "Hanoi",
+      "countryCode": "Vietnam",
+      "region": "Vietnam"
     },
     "profiles": [
       {
@@ -24,12 +24,12 @@
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
+      "name": "Chonnam National University, Gwangju, Korea",
+      "position": "Doctor of Computer Science",
+      
+      "startDate": "2022-03-01",
+      "endDate": "2025-03-01",
+      "summary": "Developed a real-time prediction model to reduce late alarms in ICU settings.",
       "highlights": ["Relativity"]
     }
   ],
