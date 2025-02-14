@@ -6,7 +6,7 @@ subtitle: <a href='#'>Affiliations</a>. Chonnam National University.
 
 profile:
   align: right
-  image: ntn.jpg
+  image: NTN_new.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Chonnam National University</p>
