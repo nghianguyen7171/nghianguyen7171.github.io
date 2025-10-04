@@ -318,8 +318,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Nguyen]
+  first_name: [Trong-Nghia, Nghia]
 
   style: apa
   locale: en
@@ -347,7 +347,7 @@ scholar:
 enable_publication_badges:
   altmetric: true # Altmetric badge (Customization options: https://badge-docs.altmetric.com/index.html)
   dimensions: true # Dimensions badge (Customization options: https://badge.dimensions.ai/)
-  google_scholar: Google Scholar badge (https://scholar.google.com/citations?hl=vi&user=kl6Sz_wAAAAJ) #true
+  google_scholar: true # Google Scholar badge (https://scholar.google.com/citations?hl=vi&user=kl6Sz_wAAAAJ)
   inspirehep: true # Inspire HEP badge (https://help.inspirehep.net/knowledge-base/citation-metrics/)
 
 # Filter out certain bibtex entry keywords used internally from the bib output
@@ -638,7 +638,7 @@ third_party_libraries:
 
 jekyll_get_json:
   - data: resume
-   json: https://github.com/nghianguyen7171/nghianguyen7171.github.io/blob/master/assets/json/resume.json
+   json: https://raw.githubusercontent.com/nghianguyen7171/nghianguyen7171.github.io/master/assets/json/resume.json
 jsonresume:
   - basics
   - work
