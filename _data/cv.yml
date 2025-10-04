@@ -94,12 +94,12 @@
 - title: Conference Presentations
   type: time_table
   contents:
-    - title: MediFusion-Flex: An Adaptive Multimodal Deep Learning Framework for Clinical Deterioration Prediction in Emergency Medicine
-      institution: THE 18TH MULTI-DISCIPLINARY INTERNATIONAL CONFERENCE ON ARTIFICIAL INTELLIGENCE 2025 (MIWAI 2025)
+    - title: "MediFusion-Flex: An Adaptive Multimodal Deep Learning Framework for Clinical Deterioration Prediction in Emergency Medicine"
+      institution: "THE 18TH MULTI-DISCIPLINARY INTERNATIONAL CONFERENCE ON ARTIFICIAL INTELLIGENCE 2025 (MIWAI 2025)"
       year: 2025
       description:
-        - Accepted for presentation at MIWAI 2025
-        - Website: https://miwai25.miwai.org/
+        - "Accepted for presentation at MIWAI 2025"
+        - "Website: https://miwai25.miwai.org/"
 
 - title: Technical Skills
   type: list
