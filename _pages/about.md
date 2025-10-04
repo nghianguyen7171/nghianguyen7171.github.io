@@ -2,16 +2,17 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Chonnam National University. 
+subtitle: <a href='#'>Affiliations</a>. National Economics University. 
 
 profile:
   align: right
   image: new_profile_pic.jpeg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Chonnam National University</p>
-    <p>77 Yongbongro, Bukgu</p>
-    <p>Gwangju, 61189</p>
+    <p>National Economics University</p>
+    <p>207 Vong Town street, Dong Tam ward</p>
+    <p>Hai Ba Trung district, Hanoi city, Vietnam</p>
+    <p>Email: nghiant@neu.edu.vn</p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
