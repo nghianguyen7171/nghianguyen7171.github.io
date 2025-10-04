@@ -10,8 +10,8 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>National Economics University</p>
-    <p>207 Vong Town street, Dong Tam ward</p>
-    <p>Hai Ba Trung district, Hanoi city, Vietnam</p>
+    <p>207 Giai Phong street, Bach Mai ward</p>
+    <p>Hanoi, Vietnam</p>
     <p>Email: nghiant@neu.edu.vn</p>
 
 news: true # includes a list of news items
