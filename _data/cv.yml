@@ -2,96 +2,130 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Trong-Nghia Nguyen
     - name: Date of Birth
-      value: 14th March 1879
+      value: [Not specified in available information]
     - name: Languages
-      value: English, German
+      value: English, Vietnamese
+    - name: Email
+      value: nghiant@neu.edu.vn
+    - name: Current Affiliation
+      value: National Economics University, Hanoi, Vietnam
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Ph.D. in Artificial Intelligence Convergence
+      institution: Chonnam National University, Gwangju, South Korea
+      year: 2025
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Research focused on pattern recognition, medical image and signal processing
+        - Developed advanced deep learning algorithms for emergency care medicine
+        - Thesis: Deep learning approaches for clinical deterioration prediction
+    - title: M.S. in Computer Vision
+      institution: MICA, Hanoi University of Science and Technology, Vietnam
+      year: 2020
       description:
-        - Description 1.
-        - Description 2.
+        - Specialized in computer vision and image processing
+        - Research in multi-shot person re-identification
+    - title: B.S. in Information Technology
+      institution: Hue University of Science and Technology, Vietnam
+      year: 2018
+      description:
+        - Foundation in information technology and computer science
 
-- title: Experience
+- title: Current Position
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Faculty Member
+      institution: National Economics University, Hanoi, Vietnam
+      year: 2025 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
+        - Teaching and research in artificial intelligence and machine learning
+        - Developing AI solutions for healthcare and medical applications
+        - Address: 207 Vong Town street, Dong Tam ward, Hai Ba Trung district, Hanoi city, Vietnam
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
-
-- title: Academic Interests
+- title: Research Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Artificial Intelligence and Machine Learning
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Deep learning algorithms for medical applications
+        - Time-series analysis and prediction
+        - Pattern recognition and computer vision
+    - title: Medical AI Applications
       items:
-        - Description 1.
-        - Description 2.
+        - Clinical deterioration prediction
+        - Emergency care medicine
+        - Medical image and signal processing
+    - title: Natural Language Processing
+      items:
+        - Large language models (LLM)
+        - Text analysis and processing
 
-- title: Other Interests
+- title: Selected Publications
+  type: time_table
+  contents:
+    - title: Dual-stream transformer approach for pain assessment using visual-physiological data modeling
+      institution: PeerJ Computer Science
+      year: 2025
+      description:
+        - Published in PeerJ Computer Science, Volume 11, e3158
+        - DOI: 10.7717/peerj-cs.3158
+    - title: Temporal Variational Autoencoder Model for In-hospital Clinical Emergency Prediction
+      institution: Journal of Biomedical Signal Processing and Control
+      year: 2025
+      description:
+        - Published in BSPC, Volume 100, Pages 106975
+        - DOI: 10.1016/j.bspc.2024.106975
+    - title: Multi-Gradient Siamese Temporal Model for the Prediction of Clinical Events in Rapid Response Systems
+      institution: IEEE Intelligent Systems
+      year: 2024
+      description:
+        - Published in IEEE Intelligent Systems
+        - DOI: 10.1109/MIS.2024.3408290
+    - title: Explainable Deep Contrastive Federated Learning System for Early Prediction of Clinical Status in Intensive Care Unit
+      institution: IEEE Access
+      year: 2024
+      description:
+        - Published in IEEE Access, Volume 12, Pages 117176-117202
+        - DOI: 10.1109/ACCESS.2024.3447759
+
+- title: Conference Presentations
+  type: time_table
+  contents:
+    - title: MediFusion-Flex: An Adaptive Multimodal Deep Learning Framework for Clinical Deterioration Prediction in Emergency Medicine
+      institution: THE 18TH MULTI-DISCIPLINARY INTERNATIONAL CONFERENCE ON ARTIFICIAL INTELLIGENCE 2025 (MIWAI 2025)
+      year: 2025
+      description:
+        - Accepted for presentation at MIWAI 2025
+        - Website: https://miwai25.miwai.org/
+
+- title: Technical Skills
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Programming Languages:</u> Python, R, MATLAB, Java, C++
+    - <u>Machine Learning Frameworks:</u> TensorFlow, PyTorch, Scikit-learn, Keras
+    - <u>Data Analysis:</u> Pandas, NumPy, Matplotlib, Seaborn
+    - <u>Deep Learning:</u> CNN, RNN, LSTM, Transformer, Siamese Networks
+    - <u>Medical AI:</u> Clinical prediction models, Time-series analysis, Signal processing
+    - <u>Tools:</u> Git, Docker, Jupyter Notebook, LaTeX
+
+- title: Research Contributions
+  type: nested_list
+  contents:
+    - title: Healthcare AI Applications
+      items:
+        - Developed deep learning models for clinical deterioration prediction
+        - Created explainable AI systems for medical decision support
+        - Implemented federated learning approaches for healthcare data
+    - title: Computer Vision Research
+      items:
+        - Multi-shot person re-identification systems
+        - Action unit detection using vision transformers
+        - Feature fusion techniques for improved performance
+    - title: Signal Processing
+      items:
+        - EEG signal denoising using hybrid CNN-LSTM approaches
+        - Temporal analysis of physiological signals
+        - Real-time medical signal processing applications
