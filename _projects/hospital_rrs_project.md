@@ -4,7 +4,7 @@ title: Hospital Rapid Response System
 description: AI-driven clinical deterioration prediction using Temporal Variational Autoencoders
 img: assets/img/RRS.png
 importance: 1
-category: research
+category: work
 related_publications: true
 ---
 
