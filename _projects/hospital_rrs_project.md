@@ -73,6 +73,14 @@ This project presents a **patented AI-driven system** (KR20240104996A) that uses
 ## Publications
 This work has been published in *Biomedical Signal Processing and Control* (2024) and is protected by Korean Patent KR20240104996A.
 
+## References
+
+{% cite 10559396tvae --file papers %}
+{% cite 10559396 --file papers %}
+{% cite 10643963 --file papers %}
+{% cite nguyen2022deep --file papers %}
+{% cite nguyen2021deep --file papers %}
+
 ## Future Work
 - Multi-modal integration with imaging data
 - Federated learning for multi-hospital collaboration
