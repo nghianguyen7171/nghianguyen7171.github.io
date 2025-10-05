@@ -4,9 +4,14 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
+  - nghianguyen7171/TVAE-RRS
   - nghianguyen7171/nghianguyen7171.github.io
+  - nghianguyen7171/NEU_Class_Manager
+  - nghianguyen7171/ehr_proccessed
   - nghianguyen7171/Deep_CFL
   - nghianguyen7171/new_mgsiameseTS
-  - nghianguyen7171/TVAE-RRS
+  - nghianguyen7171/GA_Enhance_for_TRPTW-
+  - nghianguyen7171/cibmtr00
   - nghianguyen7171/beehealth
   - nghianguyen7171/Fashion-Recognition-and-Recommendation-system
+  - nghianguyen7171/rrs_public
