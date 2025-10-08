@@ -35,13 +35,15 @@ This is a Jekyll-based academic website for Dr. Trong-Nghia Nguyen, hosted on Gi
     - Updated `_data/repositories.yml` with newest repositories
     - Reordered by relevance and recency (11 repositories total)
     - Added TVAE-RRS, NEU_Class_Manager, ehr_proccessed, and other recent projects
-11. **Lectures Page Creation**:
-    - Created comprehensive `lectures.md` page
+11. **Lectures Page Creation & Optimization**:
+    - Created `lectures.md` as dropdown navigation menu
     - Added Introduction to AI course (EP15.TOKT11121 & EP16.TOKT11121)
     - Added Basic Data Science in Economics and Business (FDA.6.1.2.01.V)
-    - Included course descriptions, topics, prerequisites, and materials
-    - Added direct links to course content
-    - Replaced placeholder `teaching.md` with comprehensive lectures page
+    - Configured dropdown navigation for easy course access
+    - Each course title links directly to external course content
+    - Streamlined presentation with minimal text
+    - Updated Basic DS course link to new address (DS_for_Bussiness)
+    - Replaced placeholder `teaching.md` with dropdown lectures navigation
 
 ### 🔧 Technical Issues Resolved
 - **Bundler Version Error**: Removed invalid `bundler-version` parameter from GitHub Actions
@@ -67,7 +69,7 @@ This is a Jekyll-based academic website for Dr. Trong-Nghia Nguyen, hosted on Gi
 - **`_pages/`**: Main site pages
   - `about.md`: Homepage with profile information
   - `cv.md`: CV page configuration
-  - `lectures.md`: Comprehensive lectures page with course information
+  - `lectures.md`: Dropdown navigation menu linking to external course sites
 - **`_projects/`**: Project showcases
   - `hospital_rrs_project.md`: Hospital Rapid Response System project
 - **`_data/`**: Data files
@@ -126,10 +128,10 @@ This is a Jekyll-based academic website for Dr. Trong-Nghia Nguyen, hosted on Gi
 
 ### Teaching Courses
 - **Introduction to Artificial Intelligence**: EP15.TOKT11121 (DS) & EP16.TOKT11121 (AI)
-  - Course content: https://nghianguyen7171.github.io/Intro_to_AI/
+  - Course content: https://nghianguyen7171.github.io/Intro_to_AI/#home
   - Topics: Search strategies, adversarial search, logic, neural networks, CV, NLP
 - **Basic Data Science in Economics and Business**: FDA.6.1.2.01.V
-  - Course content: https://docs.google.com/document/d/12j_2ncLi84lpX2gO6xqg0SHqpCbjiqYU/edit
+  - Course content: https://nghianguyen7171.github.io/DS_for_Bussiness/#home
   - Topics: Data preprocessing, statistical analysis, visualization, predictive modeling
 
 ### Current Website Structure
@@ -137,7 +139,7 @@ This is a Jekyll-based academic website for Dr. Trong-Nghia Nguyen, hosted on Gi
 - **Publications**: 6+ research papers with proper citations and logos
 - **Projects**: Hospital RRS project showcase with architecture diagrams
 - **Repositories**: 11 GitHub repositories ordered by relevance and recency
-- **Lectures**: Comprehensive course information and materials
+- **Lectures**: Dropdown navigation menu with direct links to 2 course sites
 - **CV**: Complete academic and professional information
 - **News**: Recent publication announcements
 
@@ -235,8 +237,9 @@ This is a Jekyll-based academic website for Dr. Trong-Nghia Nguyen, hosted on Gi
 
 ### Adding Lectures/Courses
 - **File**: `_pages/lectures.md`
-- **Format**: Markdown with course information
-- **Links**: Include direct links to course content
+- **Format**: Dropdown navigation (YAML front matter only)
+- **Structure**: Use `dropdown: true` and `children` array with course titles and external permalinks
+- **Links**: Use full URLs for external course sites
 
 ## Contact Information
 - **Email**: nghiant@neu.edu.vn
@@ -250,7 +253,9 @@ This is a Jekyll-based academic website for Dr. Trong-Nghia Nguyen, hosted on Gi
 **Recent Major Updates**: 
 - Project page completely redesigned with Hospital RRS showcase
 - Repositories page updated with 11 newest repositories
-- Lectures page created with comprehensive course information
+- Lectures page optimized as dropdown navigation with direct course links
+- Basic Data Science course link updated to new address (DS_for_Bussiness)
+- Streamlined navigation for improved user experience
 - All technical issues resolved and website fully operational
 
 **Next Session**: Ready for content updates, new publications, or additional features
