@@ -48,7 +48,7 @@ This is a Jekyll-based academic website for Dr. Trong-Nghia Nguyen, hosted on Gi
     - Added "AI Workspace Hub" to main navigation menu
     - External link to AI Intelligent Workspace Hub (AI_Intell_Dasboad)
     - Unified command center for AI teaching, research, and productivity
-    - Uses redirect feature for seamless external navigation
+    - Uses direct external permalink for instant navigation (no redirect delay)
     - Navigation order: 7 (positioned after lectures)
 
 ### 🔧 Technical Issues Resolved
@@ -252,8 +252,9 @@ This is a Jekyll-based academic website for Dr. Trong-Nghia Nguyen, hosted on Gi
 ### Adding External Links to Navigation
 - **File**: Create new page in `_pages/` directory
 - **Format**: Markdown with minimal front matter
-- **Required Fields**: `layout: page`, `title`, `permalink`, `nav: true`, `nav_order`, `redirect: [external URL]`
-- **Example**: `ai_workspace_hub.md` redirects to AI Intelligent Workspace Hub
+- **Required Fields**: `layout: page`, `title`, `permalink: [full external URL]`, `nav: true`, `nav_order`
+- **Example**: `ai_workspace_hub.md` with `permalink: https://nghianguyen7171.github.io/AI_Intell_Dasboad/index.html#home`
+- **Note**: Use direct external URL in permalink for instant navigation (no redirect delay)
 
 ## Contact Information
 - **Email**: nghiant@neu.edu.vn
