@@ -44,6 +44,12 @@ This is a Jekyll-based academic website for Dr. Trong-Nghia Nguyen, hosted on Gi
     - Streamlined presentation with minimal text
     - Updated Basic DS course link to new address (DS_for_Bussiness)
     - Replaced placeholder `teaching.md` with dropdown lectures navigation
+12. **AI Workspace Hub External Link**:
+    - Added "AI Workspace Hub" to main navigation menu
+    - External link to AI Intelligent Workspace Hub (AI_Intell_Dasboad)
+    - Unified command center for AI teaching, research, and productivity
+    - Uses redirect feature for seamless external navigation
+    - Navigation order: 7 (positioned after lectures)
 
 ### 🔧 Technical Issues Resolved
 - **Bundler Version Error**: Removed invalid `bundler-version` parameter from GitHub Actions
@@ -70,6 +76,7 @@ This is a Jekyll-based academic website for Dr. Trong-Nghia Nguyen, hosted on Gi
   - `about.md`: Homepage with profile information
   - `cv.md`: CV page configuration
   - `lectures.md`: Dropdown navigation menu linking to external course sites
+  - `ai_workspace_hub.md`: External link to AI Intelligent Workspace Hub
 - **`_projects/`**: Project showcases
   - `hospital_rrs_project.md`: Hospital Rapid Response System project
 - **`_data/`**: Data files
@@ -140,6 +147,7 @@ This is a Jekyll-based academic website for Dr. Trong-Nghia Nguyen, hosted on Gi
 - **Projects**: Hospital RRS project showcase with architecture diagrams
 - **Repositories**: 11 GitHub repositories ordered by relevance and recency
 - **Lectures**: Dropdown navigation menu with direct links to 2 course sites
+- **AI Workspace Hub**: External link to unified AI command center for teaching, research, and productivity
 - **CV**: Complete academic and professional information
 - **News**: Recent publication announcements
 
@@ -241,6 +249,12 @@ This is a Jekyll-based academic website for Dr. Trong-Nghia Nguyen, hosted on Gi
 - **Structure**: Use `dropdown: true` and `children` array with course titles and external permalinks
 - **Links**: Use full URLs for external course sites
 
+### Adding External Links to Navigation
+- **File**: Create new page in `_pages/` directory
+- **Format**: Markdown with minimal front matter
+- **Required Fields**: `layout: page`, `title`, `permalink`, `nav: true`, `nav_order`, `redirect: [external URL]`
+- **Example**: `ai_workspace_hub.md` redirects to AI Intelligent Workspace Hub
+
 ## Contact Information
 - **Email**: nghiant@neu.edu.vn
 - **GitHub**: nghianguyen7171
@@ -255,6 +269,7 @@ This is a Jekyll-based academic website for Dr. Trong-Nghia Nguyen, hosted on Gi
 - Repositories page updated with 11 newest repositories
 - Lectures page optimized as dropdown navigation with direct course links
 - Basic Data Science course link updated to new address (DS_for_Bussiness)
+- AI Workspace Hub added as external navigation link
 - Streamlined navigation for improved user experience
 - All technical issues resolved and website fully operational
 
