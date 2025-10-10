@@ -86,7 +86,7 @@ $$\mathcal{L}_{\text{TVAE}} = \mathcal{L}_{\text{reconstruction}} + \beta \cdot 
 
 #### **Stage 2: Multi-Gradient Siamese Temporal Model**
 
-{% cite 10559396 %}
+{% cite nguyen2024siamese %}
 
 This approach introduces **comparative learning** through Siamese architectures that process multiple temporal gradients:
 
@@ -102,7 +102,7 @@ where $$\mathbf{x}_i$$ represents the $$i$$-th gradient stream ($$i=0$$: raw sig
 
 #### **Stage 3: Federated Learning Framework**
 
-{% cite 10643963 %}
+{% cite nguyen2024federated %}
 
 To address **data privacy** and enable **multi-institutional learning**, we developed an explainable federated learning system:
 
@@ -136,9 +136,9 @@ To address **data privacy** and enable **multi-institutional learning**, we deve
 
 <sup>1</sup> {% cite 10559396tvae %}
 
-<sup>2</sup> {% cite 10559396 %}
+<sup>2</sup> {% cite nguyen2024siamese %}
 
-<sup>3</sup> {% cite 10643963 %}
+<sup>3</sup> {% cite nguyen2024federated %}
 
 **Statistical Significance**: All improvements over traditional EWS are statistically significant ($$p < 0.001$$, DeLong's test for AUROC; bootstrap test for other metrics).
 
@@ -214,7 +214,7 @@ To address **data privacy** and enable **multi-institutional learning**, we deve
 
 ### 5.2 Explainability in Federated Learning
 
-{% cite 10643963 %}
+{% cite nguyen2024federated %}
 
 Our federated learning framework incorporates **explainable AI** components:
 - **Institution-specific model analysis**: Identifies how different hospital populations influence predictions
@@ -280,8 +280,8 @@ Our federated learning framework incorporates **explainable AI** components:
 This research has been published in leading journals and conferences:
 
 {% cite 10559396tvae %}  
-{% cite 10559396 %}  
-{% cite 10643963 %}  
+{% cite nguyen2024siamese %}  
+{% cite nguyen2024federated %}  
 {% cite nguyen2022deep %}  
 {% cite nguyen2021deep %}
 
