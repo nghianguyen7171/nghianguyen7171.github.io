@@ -25,7 +25,7 @@ related_publications: true
 
 ### 1.1 The Challenge of In-Hospital Deterioration
 
-In-hospital clinical deterioration represents a critical threat to patient safety, with cardiac arrests and unexpected ICU transfers occurring in 1.5-3% of all hospital admissions {% cite nguyen2021deep --file papers %}. Despite the implementation of Rapid Response Systems (RRS) in hospitals worldwide, traditional Early Warning Systems (EWS) suffer from:
+In-hospital clinical deterioration represents a critical threat to patient safety, with cardiac arrests and unexpected ICU transfers occurring in 1.5-3% of all hospital admissions {% cite nguyen2021deep %}. Despite the implementation of Rapid Response Systems (RRS) in hospitals worldwide, traditional Early Warning Systems (EWS) suffer from:
 
 - **Limited prediction horizon** (typically < 2 hours before critical events)
 - **High false-positive rates** (>85% in some implementations)
@@ -69,7 +69,7 @@ Our research utilizes de-identified electronic health records from a tertiary ho
 
 #### **Stage 1: Temporal Variational Autoencoder (TVAE)**
 
-{% cite 10559396tvae --file papers %}
+{% cite 10559396tvae %}
 
 The TVAE framework combines **probabilistic modeling** with **temporal sequence learning** to capture uncertainty in clinical predictions:
 
@@ -86,7 +86,7 @@ $$\mathcal{L}_{\text{TVAE}} = \mathcal{L}_{\text{reconstruction}} + \beta \cdot 
 
 #### **Stage 2: Multi-Gradient Siamese Temporal Model**
 
-{% cite 10559396 --file papers %}
+{% cite 10559396 %}
 
 This approach introduces **comparative learning** through Siamese architectures that process multiple temporal gradients:
 
@@ -102,7 +102,7 @@ where $$\mathbf{x}_i$$ represents the $$i$$-th gradient stream ($$i=0$$: raw sig
 
 #### **Stage 3: Federated Learning Framework**
 
-{% cite 10643963 --file papers %}
+{% cite 10643963 %}
 
 To address **data privacy** and enable **multi-institutional learning**, we developed an explainable federated learning system:
 
@@ -134,11 +134,11 @@ To address **data privacy** and enable **multi-institutional learning**, we deve
 
 **Model References:**
 
-<sup>1</sup> {% cite 10559396tvae --file papers %}
+<sup>1</sup> {% cite 10559396tvae %}
 
-<sup>2</sup> {% cite 10559396 --file papers %}
+<sup>2</sup> {% cite 10559396 %}
 
-<sup>3</sup> {% cite 10643963 --file papers %}
+<sup>3</sup> {% cite 10643963 %}
 
 **Statistical Significance**: All improvements over traditional EWS are statistically significant ($$p < 0.001$$, DeLong's test for AUROC; bootstrap test for other metrics).
 
@@ -214,7 +214,7 @@ To address **data privacy** and enable **multi-institutional learning**, we deve
 
 ### 5.2 Explainability in Federated Learning
 
-{% cite 10643963 --file papers %}
+{% cite 10643963 %}
 
 Our federated learning framework incorporates **explainable AI** components:
 - **Institution-specific model analysis**: Identifies how different hospital populations influence predictions
@@ -279,11 +279,11 @@ Our federated learning framework incorporates **explainable AI** components:
 
 This research has been published in leading journals and conferences:
 
-{% cite 10559396tvae --file papers %}  
-{% cite 10559396 --file papers %}  
-{% cite 10643963 --file papers %}  
-{% cite nguyen2022deep --file papers %}  
-{% cite nguyen2021deep --file papers %}
+{% cite 10559396tvae %}  
+{% cite 10559396 %}  
+{% cite 10643963 %}  
+{% cite nguyen2022deep %}  
+{% cite nguyen2021deep %}
 
 **Impact Metrics:**
 - **Citations**: 45+ citations across Google Scholar
