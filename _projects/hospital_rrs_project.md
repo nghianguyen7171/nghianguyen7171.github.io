@@ -67,7 +67,9 @@ Our research utilizes de-identified electronic health records from a tertiary ho
 
 ### 2.3 Multi-Stage Deep Learning Approaches
 
-#### **Stage 1: Temporal Variational Autoencoder (TVAE)** {% cite 10559396tvae --file papers %}
+#### **Stage 1: Temporal Variational Autoencoder (TVAE)**
+
+{% cite 10559396tvae --file papers %}
 
 The TVAE framework combines **probabilistic modeling** with **temporal sequence learning** to capture uncertainty in clinical predictions:
 
@@ -82,7 +84,9 @@ $$\mathcal{L}_{\text{TVAE}} = \mathcal{L}_{\text{reconstruction}} + \beta \cdot 
 
 **Key Innovation**: The variational framework enables **probabilistic risk estimation** rather than binary classification, providing clinicians with uncertainty quantification essential for risk-sensitive decision-making.
 
-#### **Stage 2: Multi-Gradient Siamese Temporal Model** {% cite 10559396 --file papers %}
+#### **Stage 2: Multi-Gradient Siamese Temporal Model**
+
+{% cite 10559396 --file papers %}
 
 This approach introduces **comparative learning** through Siamese architectures that process multiple temporal gradients:
 
@@ -96,7 +100,9 @@ $$\mathcal{L}_{\text{Siamese}} = \sum_{i=1}^{3} \alpha_i \cdot \mathcal{L}_{\tex
 
 where $$\mathbf{x}_i$$ represents the $$i$$-th gradient stream ($$i=0$$: raw signal, $$i=1$$: velocity, $$i=2$$: acceleration).
 
-#### **Stage 3: Federated Learning Framework** {% cite 10643963 --file papers %}
+#### **Stage 3: Federated Learning Framework**
+
+{% cite 10643963 --file papers %}
 
 To address **data privacy** and enable **multi-institutional learning**, we developed an explainable federated learning system:
 
@@ -119,12 +125,20 @@ To address **data privacy** and enable **multi-institutional learning**, we deve
 
 | Model Architecture | AUROC | AUPRC | Sensitivity | Specificity | PPV | Lead Time (hours) |
 |-------------------|-------|-------|-------------|-------------|-----|-------------------|
-| **TVAE** {% cite 10559396tvae --file papers %} | **0.873 ± 0.018** | **0.781 ± 0.022** | 0.854 | 0.894 | 0.456 | **3.1 ± 0.7** |
-| **Multi-Gradient Siamese** {% cite 10559396 --file papers %} | **0.891 ± 0.015** | **0.798 ± 0.019** | **0.872** | **0.908** | **0.483** | **3.4 ± 0.6** |
-| **Federated Model** {% cite 10643963 --file papers %} | 0.868 ± 0.021 | 0.769 ± 0.025 | 0.841 | 0.887 | 0.442 | 2.9 ± 0.8 |
+| **TVAE**<sup>1</sup> | **0.873 ± 0.018** | **0.781 ± 0.022** | 0.854 | 0.894 | 0.456 | **3.1 ± 0.7** |
+| **Multi-Gradient Siamese**<sup>2</sup> | **0.891 ± 0.015** | **0.798 ± 0.019** | **0.872** | **0.908** | **0.483** | **3.4 ± 0.6** |
+| **Federated Model**<sup>3</sup> | 0.868 ± 0.021 | 0.769 ± 0.025 | 0.841 | 0.887 | 0.442 | 2.9 ± 0.8 |
 | Traditional NEWS | 0.754 ± 0.028 | 0.612 ± 0.035 | 0.698 | 0.793 | 0.312 | 1.2 ± 0.4 |
 | MEWS Baseline | 0.738 ± 0.031 | 0.589 ± 0.038 | 0.672 | 0.781 | 0.289 | 1.1 ± 0.5 |
 | Traditional DEWS | 0.821 ± 0.020 | 0.702 ± 0.028 | 0.782 | 0.861 | 0.387 | 2.0 ± 0.5 |
+
+**Model References:**
+
+<sup>1</sup> {% cite 10559396tvae --file papers %}
+
+<sup>2</sup> {% cite 10559396 --file papers %}
+
+<sup>3</sup> {% cite 10643963 --file papers %}
 
 **Statistical Significance**: All improvements over traditional EWS are statistically significant ($$p < 0.001$$, DeLong's test for AUROC; bootstrap test for other metrics).
 
@@ -198,7 +212,9 @@ To address **data privacy** and enable **multi-institutional learning**, we deve
 - **Physiological explanation**: Links predictions to specific vital sign abnormalities
 - **Similar case retrieval**: Presents historical cases with similar patterns for clinical context
 
-### 5.2 Explainability in Federated Learning {% cite 10643963 --file papers %}
+### 5.2 Explainability in Federated Learning
+
+{% cite 10643963 --file papers %}
 
 Our federated learning framework incorporates **explainable AI** components:
 - **Institution-specific model analysis**: Identifies how different hospital populations influence predictions
