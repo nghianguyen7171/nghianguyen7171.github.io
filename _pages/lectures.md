@@ -10,4 +10,7 @@ children:
   - title: divider
   - title: Basic Data Science in Economics and Business
     permalink: https://nghianguyen7171.github.io/DS_for_Bussiness/#home
+  - title: divider
+  - title: Data Analysis with Excel
+    permalink: https://nghianguyen7171.github.io/excel_course/
 ---
