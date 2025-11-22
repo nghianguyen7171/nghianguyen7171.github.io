@@ -219,6 +219,7 @@ DEPENDENCIES
   css_parser
   feedjira
   httparty
+  nokogiri
   jekyll
   jekyll-archives
   jekyll-email-protect
