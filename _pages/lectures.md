@@ -13,4 +13,7 @@ children:
   - title: divider
   - title: Data Analysis with Excel
     permalink: https://nghianguyen7171.github.io/excel_course/
+  - title: divider
+  - title: Time Series Analysis and Forecasting
+    permalink: https://nghianguyen7171.github.io/ts_course/
 ---
