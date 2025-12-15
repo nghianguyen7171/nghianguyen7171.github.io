@@ -375,8 +375,9 @@ scholar:
 
 ---
 
-**Last Updated**: October 10, 2025  
+**Last Updated**: December 15, 2025  
 **Status**: Fully functional and deployed with comprehensive scientific content  
+**AI Readiness**: 100%  
 
 **Recent Major Updates (October 2025)**: 
 - **Hospital RRS Project Page - Complete Scientific Redesign**:
@@ -394,6 +395,10 @@ scholar:
   - Relocated citations from problematic locations (headings/tables) to proper paragraph placement
   - Cleaned BibTeX entries by removing empty fields
   - All 13 citation instances now render correctly as "(Author et al., Year)"
+
+- **Lectures Navigation Update (December 2025)**:
+  - Added `Time Series Analysis and Forecasting` course link (`https://nghianguyen7171.github.io/ts_course/`) to lectures dropdown
+  - Verified dropdown structure with dividers and external permalinks
 
 - **Previous Updates**:
   - Repositories page updated with 11 newest repositories
