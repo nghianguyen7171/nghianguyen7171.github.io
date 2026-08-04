@@ -18,7 +18,7 @@ This is a Jekyll-based academic website for Dr. Trong-Nghia Nguyen, hosted on Gi
    - All existing publications maintained
 6. **News Announcements**: Added 2 new announcements for recent publications
 7. **CV Page Complete Overhaul**: 
-   - Updated PDF reference to `CV_Nghia_ACD_2.pdf`
+   - CV PDF: `CV_Nghia_2026.pdf` in `assets/pdf/` (built from `CV_Nghia_ACD/main.tex`)
    - Comprehensive CV data in `_data/cv.yml`
    - Correct thesis title: "Multi-Stage Deep Learning Framework with Distributed Contrastive Methods for Rapid Response System"
 8. **Deployment Issues Fixed**: 
@@ -67,12 +67,9 @@ This is a Jekyll-based academic website for Dr. Trong-Nghia Nguyen, hosted on Gi
     - Added TVAE-RRS, NEU_Class_Manager, ehr_proccessed, and other recent projects
 12. **Lectures Page Creation & Optimization**:
     - Created `lectures.md` as dropdown navigation menu
-    - Added Introduction to AI course (EP15.TOKT11121 & EP16.TOKT11121)
-    - Added Basic Data Science in Economics and Business (FDA.6.1.2.01.V)
-    - Configured dropdown navigation for easy course access
-    - Each course title links directly to external course content
-    - Streamlined presentation with minimal text
-    - Updated Basic DS course link to new address (DS_for_Bussiness)
+    - **Five courses** in dropdown: Introduction to AI, Basic Data Science in Economics and Business, Data Analysis with Excel, Time Series Analysis and Forecasting, Data Mining
+    - Links: Intro_to_AI, DS_for_Bussiness, excel_course, ts_course, Data_mining
+    - Configured dropdown navigation for easy course access; each title links directly to external course content
     - Replaced placeholder `teaching.md` with dropdown lectures navigation
 13. **AI Workspace Hub External Link**:
     - Added "AI Workspace Hub" to main navigation menu
@@ -122,6 +119,7 @@ This is a Jekyll-based academic website for Dr. Trong-Nghia Nguyen, hosted on Gi
 - **`_news/`**: News announcements
   - `announcement_4.md`: PeerJ publication news
   - `announcement_5.md`: MIWAI 2025 acceptance news
+  - `announcement_6.md`: Band2CleanFormer (BSPC 2026) publication news
 - **`assets/`**: Static assets
   - `img/`: Images including profile pictures, publication logos, and architecture diagrams
     - `RRS.png`: Rapid Response System architecture diagram
@@ -154,17 +152,21 @@ This is a Jekyll-based academic website for Dr. Trong-Nghia Nguyen, hosted on Gi
 - **B.S. (2018)**: Information Technology, Hue University of Science and Technology
 
 ### Publications (Current in papers.bib)
-1. **PeerJ Computer Science (2025)**: Dual-stream transformer approach for pain assessment
-   - Citation key: `nguyen2025dualstream`
-2. **BSPC (2025)**: Temporal Variational Autoencoder Model for Clinical Emergency Prediction
+1. **BSPC (2026)**: Band2CleanFormer: Integrating band-specific processing and inter-band attention for robust EEG denoising
+   - Citation key: `ulziisaikhan2026band2clean`
+2. **MIWAI (2026)**: MediFusion-Flex (Springer LNCS) — Clinical Deterioration Prediction in Emergency Medicine
+   - Citation key: `nguyen2026medifusion`
+3. **BSPC (2025)**: Temporal Variational Autoencoder Model for Clinical Emergency Prediction
    - Citation key: `10559396tvae`
-3. **IEEE Intelligent Systems (2024)**: Multi-Gradient Siamese Temporal Model
-   - Citation key: `nguyen2024siamese` (formerly `10559396`)
-4. **IEEE Access (2024)**: Explainable Deep Contrastive Federated Learning System
-   - Citation key: `nguyen2024federated` (formerly `10643963`)
-5. **Smart Media Journal (2022)**: TabNet-Based System for Water Quality Prediction
+4. **PeerJ Computer Science (2025)**: Dual-stream transformer approach for pain assessment
+   - Citation key: `nguyen2025dualstream`
+5. **IEEE Intelligent Systems (2024)**: Multi-Gradient Siamese Temporal Model
+   - Citation key: `nguyen2024siamese`
+6. **IEEE Access (2024)**: Explainable Deep Contrastive Federated Learning System
+   - Citation key: `nguyen2024federated`
+7. **Smart Media Journal (2022)**: TabNet-Based System for Water Quality Prediction
    - Citation key: `nguyen2022tabnet`
-6. **Multiple Conference Papers**: MAPR, KIPS, BIGDAS, SMA, CVPRW
+8. **Conference Papers**: MAPR, KIPS, BIGDAS, SMA, CVPRW, ACK
    - Keys: `nguyen2020feature`, `nguyen2021deep`, `nguyen2022deep`, `sma2022`, `vu2023ensemble`, `tulga2024`
 
 ### Research Interests
@@ -174,24 +176,23 @@ This is a Jekyll-based academic website for Dr. Trong-Nghia Nguyen, hosted on Gi
 - Computer Vision
 - Signal Processing
 
-### Teaching Courses
-- **Introduction to Artificial Intelligence**: EP15.TOKT11121 (DS) & EP16.TOKT11121 (AI)
-  - Course content: https://nghianguyen7171.github.io/Intro_to_AI/#home
-  - Topics: Search strategies, adversarial search, logic, neural networks, CV, NLP
-- **Basic Data Science in Economics and Business**: FDA.6.1.2.01.V
-  - Course content: https://nghianguyen7171.github.io/DS_for_Bussiness/#home
-  - Topics: Data preprocessing, statistical analysis, visualization, predictive modeling
+### Teaching Courses (Lectures dropdown)
+- **Introduction to Artificial Intelligence**: https://nghianguyen7171.github.io/Intro_to_AI/#home
+- **Basic Data Science in Economics and Business**: https://nghianguyen7171.github.io/DS_for_Bussiness/#home
+- **Data Analysis with Excel**: https://nghianguyen7171.github.io/excel_course/
+- **Time Series Analysis and Forecasting**: https://nghianguyen7171.github.io/ts_course/
+- **Data Mining**: https://nghianguyen7171.github.io/Data_mining/
 
 ### Current Website Structure
 - **Homepage**: Profile information, affiliation, contact details
-- **Publications**: 6+ research papers with proper citations and logos
+- **Publications**: 15+ entries (journals and conferences) with proper citations and logos; generated from `papers.bib`
 - **Projects**: Hospital RRS project - comprehensive 10-section scientific showcase
   - Live URL: https://nghianguyen7171.github.io/projects/hospital_rrs_project/
   - Features: Mathematical formulations, performance tables, clinical impact metrics
   - Architecture diagrams: RRS.png, TVAE.png
   - 325 lines of professional scientific content
 - **Repositories**: 11 GitHub repositories ordered by relevance and recency
-- **Lectures**: Dropdown navigation menu with direct links to 2 course sites
+- **Lectures**: Dropdown navigation menu with direct links to 4 course sites (Intro to AI, Basic DS, Excel, Time Series)
 - **AI Workspace Hub**: External link to unified AI command center for teaching, research, and productivity
 - **CV**: Complete academic and professional information
 - **News**: Recent publication announcements
@@ -333,7 +334,8 @@ scholar:
 
 ### Updating CV
 - **File**: `_data/cv.yml`
-- **PDF**: Place in `assets/pdf/` and reference in `_pages/cv.md`
+- **PDF**: Place in `assets/pdf/` and set `cv_pdf: filename.pdf` in `_pages/cv.md` (e.g. `CV_Nghia_2026.pdf`)
+- **LaTeX source**: `CV_Nghia_ACD/main.tex` — build PDF locally then copy to `assets/pdf/`
 
 ### Adding News
 - **Directory**: `_news/`
@@ -375,46 +377,27 @@ scholar:
 
 ---
 
-**Last Updated**: December 15, 2025  
+**Last Updated**: August 2026  
 **Status**: Fully functional and deployed with comprehensive scientific content  
 **AI Readiness**: 100%  
 
-**Recent Major Updates (October 2025)**: 
-- **Hospital RRS Project Page - Complete Scientific Redesign**:
-  - 325-line comprehensive academic showcase with 10 structured sections
-  - Integrated 3 major publications (TVAE, Multi-Gradient Siamese, Federated Learning)
-  - Added mathematical formulations (LaTeX equations)
-  - Comprehensive performance comparison table (6 models × 7 metrics)
-  - Clinical impact quantification with real validation results
-  - Professional visual presentation with styled elements
-  
-- **Jekyll-Scholar Citation System - All Issues Resolved**:
-  - Fixed all "(missing reference)" errors through multiple solutions
-  - Changed citation keys from numeric to descriptive (nguyen2024siamese, nguyen2024federated)
-  - Removed invalid `--file papers` parameter from all cite tags
-  - Relocated citations from problematic locations (headings/tables) to proper paragraph placement
-  - Cleaned BibTeX entries by removing empty fields
-  - All 13 citation instances now render correctly as "(Author et al., Year)"
+**Recent Major Updates (February 2026)**:
+- **New publication**: Band2CleanFormer (BSPC 2026) — *Band2CleanFormer: Integrating band-specific processing and inter-band attention for robust EEG denoising* (Ulziisaikhan, Nguyen, Kim). Added to `papers.bib` as `ulziisaikhan2026band2clean`; news announcement `announcement_6.md` added for main page.
 
-- **Lectures Navigation Update (December 2025)**:
-  - Added `Time Series Analysis and Forecasting` course link (`https://nghianguyen7171.github.io/ts_course/`) to lectures dropdown
-  - Verified dropdown structure with dividers and external permalinks
+**Recent Major Updates (December 2025)**:
+- **Lectures Navigation**: Added Data Analysis with Excel, Time Series Analysis and Forecasting, and Data Mining; dropdown now has 5 courses (Intro to AI, Basic DS, Excel, ts_course, Data_mining).
+- **CV PDF**: Site CV PDF set to `CV_Nghia_2026.pdf` in `assets/pdf/`; built from `CV_Nghia_ACD/main.tex` (C.7 updated with full MIWAI 2025 Springer details).
 
-- **Previous Updates**:
-  - Repositories page updated with 11 newest repositories
-  - Lectures page optimized as dropdown navigation with direct course links
-  - Basic Data Science course link updated to new address (DS_for_Bussiness)
-  - AI Workspace Hub added as external navigation link
-  - Streamlined navigation for improved user experience
-  - All technical issues resolved and website fully operational
+**Earlier Updates (October 2025)**:
+- **Hospital RRS Project Page**: 10-section scientific showcase; TVAE, Multi-Gradient Siamese, Federated Learning; performance tables; citation fixes.
+- **Jekyll-Scholar**: All "(missing reference)" errors resolved; descriptive citation keys; no `--file papers`; citations in paragraph text only.
+- Repositories (11), AI Workspace Hub link, backup-context excluded from Jekyll build.
 
-**Key Files Modified** (October 2025):
-- `_projects/hospital_rrs_project.md` (complete redesign, 325 lines)
-- `_bibliography/papers.bib` (fixed citation keys and cleaned entries)
-- Git commits: a7baa4c, 9acd6b0, d2a3397, 70c48ec
+**Key Files**:
+- `_bibliography/papers.bib` — all publications (incl. nguyen2026medifusion, ulziisaikhan2026band2clean)
+- `_pages/cv.md` — `cv_pdf: CV_Nghia_2026.pdf`
+- `_pages/lectures.md` — 5 courses
+- `_news/announcement_6.md` — Band2CleanFormer news
+- `_projects/hospital_rrs_project.md`, `CV_Nghia_ACD/main.tex`
 
-**Next Session**: Ready for:
-- Additional project showcases using Hospital RRS template
-- New publication additions as papers are published
-- Interactive visualizations or additional features
-- Content updates and refinements
+**Next Session**: New publications, project showcases, content/design refinements.

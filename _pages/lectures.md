@@ -16,4 +16,7 @@ children:
   - title: divider
   - title: Time Series Analysis and Forecasting
     permalink: https://nghianguyen7171.github.io/ts_course/
+  - title: divider
+  - title: Data Mining
+    permalink: https://nghianguyen7171.github.io/Data_mining/
 ---
