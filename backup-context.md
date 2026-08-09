@@ -1,45 +1,57 @@
 # Backup Context — nghianguyen7171.github.io
 
 ## Project Overview
-Personal academic website for **Dr. Trong-Nghia Nguyen**, rebuilt in **August 2026** with **Astro** (static HTML). Hosted on GitHub Pages at the same URL.
+Personal academic website for **Dr. Trong-Nghia Nguyen**, built with **Astro** (static HTML) and hosted on GitHub Pages.
 
 **Repository**: https://github.com/nghianguyen7171/nghianguyen7171.github.io  
 **Live Site**: https://nghianguyen7171.github.io/  
 **Faculty page**: https://fda.neu.edu.vn/fda-members/nguyen-trong-nghia/
 
 ## Stack
-- **Astro** (static output) — no Ruby, Jekyll, or al-folio
-- Plain CSS (`src/styles/global.css`)
-- Content as TypeScript data modules under `src/data/`
-- Deploy: `.github/workflows/deploy.yml` → `npm ci` → `npm run build` → GitHub Pages artifact
+- **Astro** static site (no Ruby / Jekyll / al-folio)
+- Plain CSS: `src/styles/global.css`
+- Content modules: `src/data/*.ts`
+- Deploy: `.github/workflows/deploy.yml` → `npm ci` → `npm run build` → GitHub Pages
 
-**Local commands**
 ```bash
 npm install
 npm run dev
 npm run build
 ```
 
-**Pages settings**: GitHub repo → Settings → Pages → Source = **GitHub Actions**
+**GitHub Pages**: Settings → Pages → Source = **GitHub Actions**
 
 ## Site map
 | Route | Content |
 |-------|---------|
 | `/` | About: photo, bio, interests, education, awards, professional links |
-| `/publications/` | Journals + conferences by year |
+| `/publications/` | Journals and conferences by year |
 | `/lectures/` | Five external course links |
-| `/cv/` | Summary + PDF download (`/cv/CV_Nghia_2026.pdf`) |
+| `/cv/` | Summary + PDF (`/cv/CV_Nghia_2026.pdf`) |
 
-Dropped from al-folio: Projects, Repositories, News, AI Workspace Hub, blog, jekyll-scholar.
+## Essential repo layout
+```
+.github/workflows/deploy.yml
+astro.config.mjs
+package.json
+package-lock.json
+tsconfig.json
+README.md
+LICENSE
+backup-context.md
+public/
+  cv/CV_Nghia_2026.pdf
+  images/profile.jpeg
+  favicon.*
+src/
+  components/
+  data/site.ts, publications.ts, lectures.ts
+  layouts/BaseLayout.astro
+  pages/ (index, publications, lectures, cv)
+  styles/global.css
+```
 
-## Key files
-- `src/data/site.ts` — identity, bio, links, education, awards
-- `src/data/publications.ts` — publication list
-- `src/data/lectures.ts` — course links
-- `src/layouts/BaseLayout.astro`, `src/components/*`
-- `public/images/profile.jpeg`, `public/cv/CV_Nghia_2026.pdf`
-- `CV_Nghia_ACD/` — LaTeX source for CV PDF (optional local build)
-- `archive/papers.bib.bak` — BibTeX snapshot from pre-Astro site
+Ignored locally (not in git): `node_modules/`, `dist/`, `.astro/`
 
 ## Professional links
 - Email: nghiant@neu.edu.vn
@@ -58,14 +70,17 @@ Dropped from al-folio: Projects, Repositories, News, AI Workspace Hub, blog, jek
 5. Data Mining — https://nghianguyen7171.github.io/Data_mining/
 
 ## Updating content
-- **Bio / links**: edit `src/data/site.ts`
-- **Publications**: edit `src/data/publications.ts`
-- **Lectures**: edit `src/data/lectures.ts`
-- **CV PDF**: replace `public/cv/CV_Nghia_2026.pdf` (rebuild from `CV_Nghia_ACD/` if needed)
+- Bio / links / education / awards → `src/data/site.ts`
+- Publications → `src/data/publications.ts`
+- Lectures → `src/data/lectures.ts`
+- CV PDF → replace `public/cv/CV_Nghia_2026.pdf`
+
+## Cleanup note (August 2026)
+Removed non-build leftovers: `archive/`, `CV_Nghia_ACD/` (LaTeX source; site uses PDF in `public/cv/`), `.vscode/`, `AGENTS.md`, `CLAUDE.md`, and all former al-folio/Jekyll assets.
 
 ## Status
-**Last Updated**: August 2026  
+**Last Updated**: August 9, 2026  
 **AI Readiness**: 100%  
-**Status**: Astro rebuild complete; deploy via GitHub Actions
+**Status**: Lean Astro repo; only files required to build and deploy remain
 
-**Next session**: Confirm Pages source is Actions; fix ResearchGate URL if needed; add new papers to `publications.ts`.
+**Next session**: Confirm Pages → GitHub Actions; update ResearchGate URL if needed; add papers via `publications.ts`.
