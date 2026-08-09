@@ -1,0 +1,25 @@
+---
+import { site } from '../data/site';
+
+const items = [
+  { label: 'Email', href: site.links.email },
+  { label: 'Google Scholar', href: site.links.scholar },
+  { label: 'ORCID', href: site.links.orcid },
+  { label: 'GitHub', href: site.links.github },
+  { label: 'LinkedIn', href: site.links.linkedin },
+  { label: 'ResearchGate', href: site.links.researchgate },
+  { label: 'FDA Profile', href: site.links.faculty },
+];
+---
+
+<ul class="social">
+  {
+    items.map((item) => (
+      <li>
+        <a href={item.href} target={item.href.startsWith('mailto:') ? undefined : '_blank'} rel="noopener noreferrer">
+          {item.label}
+        </a>
+      </li>
+    ))
+  }
+</ul>

@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { site } from '../../data/site';
+---
+
+<BaseLayout title="CV" description="Curriculum vitae of Trong-Nghia Nguyen.">
+  <h1>Curriculum Vitae</h1>
+  <p class="lead">
+    A concise overview of academic and professional experience. Download the full PDF for complete details.
+  </p>
+
+  <div class="cv-panel">
+    <p>
+      <strong>Current position:</strong> {site.title}, {site.affiliation}; member of {site.lab}.
+    </p>
+    <p>
+      Research in medical AI, time-series analysis, biomedical signal processing, and multimodal deep learning for clinical decision support.
+    </p>
+    <a class="btn" href={site.cvPdf} target="_blank" rel="noopener noreferrer">Download CV (PDF)</a>
+  </div>
+
+  <h2>Education</h2>
+  <ul class="list-plain">
+    {
+      site.education.map((item) => (
+        <li>
+          <strong>{item.degree}</strong>, {item.school} ({item.year})
+        </li>
+      ))
+    }
+  </ul>
+
+  <h2>Selected highlights</h2>
+  <ul class="list-plain">
+    <li>Publications in IEEE Intelligent Systems, IEEE Access, Biomedical Signal Processing and Control, PeerJ Computer Science, and MIWAI/Springer LNCS.</li>
+    <li>Korean patent application on hospital rapid response via vital-sign monitoring (KR20240104996A).</li>
+    <li>Peer reviewer for Scientific Reports, Journal of Medical Systems, BMC Medicine, and related venues.</li>
+    {
+      site.awards.map((item) => (
+        <li>{item}</li>
+      ))
+    }
+  </ul>
+</BaseLayout>

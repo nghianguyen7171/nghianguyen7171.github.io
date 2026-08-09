@@ -1,6 +1,18 @@
 {
-  "devDependencies": {
-    "@shopify/prettier-plugin-liquid": "1.4.0",
-    "prettier": "3.1.1"
+  "name": "nghianguyen7171.github.io",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^7.2.0"
   }
 }

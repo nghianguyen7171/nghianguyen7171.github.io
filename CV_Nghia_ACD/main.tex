@@ -1,0 +1,548 @@
+%
+%Academic CV LaTeX Template
+% Author: Dubasi Pavan Kumar
+% LinkedIn: https://www.linkedin.com/in/im-pavankumar/
+% License: MIT
+%
+% For errors, suggestions, or improvements, please contact:
+% Email: pavankumard.pg19.ma@nitp.ac.in
+%
+
+
+
+\documentclass[a4paper,11pt]{article}
+
+% Package imports
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome5}
+
+% Color definitions
+\definecolor{darkblue}{RGB}{0,0,139}
+
+% Page layout
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+\setlength{\footskip}{5pt} % Addressing fancyhdr warning
+
+% Hyperlink setup (moved after fancyhdr to address warning)
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    filecolor=darkblue,
+    urlcolor=darkblue,
+}
+
+% Custom box settings
+\usepackage[most]{tcolorbox}
+\tcbset{
+    frame code={},
+    center title,
+    left=0pt,
+    right=0pt,
+    top=0pt,
+    bottom=0pt,
+    colback=gray!20,
+    colframe=white,
+    width=\dimexpr\textwidth\relax,
+    enlarge left by=-2mm,
+    boxsep=4pt,
+    arc=0pt,outer arc=0pt,
+}
+
+% URL style
+\urlstyle{same}
+
+% Text alignment
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand{\labelitemii}{$\vcenter{\hbox{\tiny$\circ$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm,itemsep=0.5mm]}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+
+% Commands for icon sizing and positioning
+\newcommand{\socialicon}[1]{\raisebox{-0.05em}{\resizebox{!}{1em}{#1}}}
+\newcommand{\ieeeicon}[1]{\raisebox{-0.3em}{\resizebox{!}{1.3em}{#1}}}
+
+% Font options
+\newcommand{\headerfonti}{\fontfamily{phv}\selectfont} % Helvetica-like (similar to Arial/Calibri)
+\newcommand{\headerfontii}{\fontfamily{ptm}\selectfont} % Times-like (similar to Times New Roman)
+\newcommand{\headerfontiii}{\fontfamily{ppl}\selectfont} % Palatino (elegant serif)
+\newcommand{\headerfontiv}{\fontfamily{pbk}\selectfont} % Bookman (readable serif)
+\newcommand{\headerfontv}{\fontfamily{pag}\selectfont} % Avant Garde-like (similar to Trebuchet MS)
+\newcommand{\headerfontvi}{\fontfamily{cmss}\selectfont} % Computer Modern Sans Serif
+\newcommand{\headerfontvii}{\fontfamily{qhv}\selectfont} % Quasi-Helvetica (another Arial/Calibri alternative)
+\newcommand{\headerfontviii}{\fontfamily{qpl}\selectfont} % Quasi-Palatino (another elegant serif option)
+\newcommand{\headerfontix}{\fontfamily{qtm}\selectfont} % Quasi-Times (another Times New Roman alternative)
+\newcommand{\headerfontx}{\fontfamily{bch}\selectfont} % Charter (clean serif font)
+
+\begin{document}
+\headerfontiii
+
+% Header
+\begin{center}
+    {\Huge\textbf{NGHIA NGUYEN}}
+\end{center}
+\vspace{-6mm}
+
+\begin{center}
+    \small{
+    +84-368-627-253 | \href{mailto:nghiant@neu.edu.vn}{nghiant@neu.edu.vn} | 
+    \href{https://nghianguyen7171.github.io/}{nghianguyen7171.github.io}
+    }
+\end{center}
+\vspace{-6mm}
+
+\begin{center}
+    \small{
+    \socialicon{\faLinkedin} \href{https://www.linkedin.com/in/trong-nghia-nguyen-6a7824173/}{Linkedin} | 
+    \socialicon{\faGithub} \href{https://github.com/nghianguyen7171}{Github} | 
+    \ieeeicon{\includegraphics[height=1.3em]{ORCID_iD.png}} \href{https://orcid.org/0000-0003-1888-0117}{0000-0003-1888-0117} %|
+    %\socialicon{\faTwitter} \href{https://twitter.com/your-handle}{your-handle}
+    }
+\end{center}
+\vspace{-6mm}
+\begin{center}
+    \small{Hanoi, Vietnam}
+\end{center}
+
+\vspace{-4mm}
+
+\section{\textbf{Professional Summary}}
+\vspace{1mm}
+\small{
+With a Ph.D. in Computer Science, my research focuses on pattern recognition, medical image, signal processing, and time-series analysis. I have developed advanced deep learning and machine learning algorithms for emergency care medicine, which improve real-time medical decision-making. My work bridges the gap between cutting-edge AI technology and practical healthcare applications, aiming to enhance patient outcomes and advance AI-driven healthcare solutions.
+}
+\vspace{-2mm}
+
+
+\section{\textbf{Education}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Chonnam National University}{Gwangju, South Korea}
+{Doctor of Philosophy in Engineering}{2021 - 2025}
+\resumeItemListStart
+\item Department of Artificial Intelligence Convergence 
+\resumeItemListEnd
+
+\resumeSubheading
+{Hanoi University of Science and Technology}{Hanoi, Vietnam}
+{Master in Computer Science}{2019 - 2021}
+\resumeItemListStart
+\item Department of Multimedia, Information, Communication \& Applications (MICA) 
+\resumeItemListEnd
+
+\resumeSubheading
+{Hue University of Sciences}{Hue, Vietnam}
+{Bachelor in Information Technology}{2014 - 2018}
+\resumeItemListStart
+\item Department of Information Technology
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+
+% \section{\textbf{Experience}}
+% \vspace{-0.4mm}
+%   \resumeSubHeadingListStart
+%   \resumeSubheading
+%       {{Company A [\href{https://www.companya.com}{\faIcon{globe}}]}}{City, Country}
+%       {Job Title A}{Month Year - Month Year}
+%       \resumeItemListStart
+%         \item Developed [specific achievement] achieving [specific metric] in [specific area]
+%         \item Implemented [technology/method], enhancing [specific aspect] by [specific percentage]
+%         \item Conducted analysis on [specific data], identifying [key findings]
+%         \item Presented findings at [specific event], receiving [specific recognition]
+%       \resumeItemListEnd 
+%   \resumeSubheading
+%     {Company B [\href{https://www.companyb.com}{\faIcon{globe}}]}{Remote}
+%     {Job Title B}{Month Year - Month Year}
+%     \resumeItemListStart
+%       \item Engineered a [specific system/model], improving [specific metric] by [percentage]
+%       \item Developed [specific tool/method], increasing [specific aspect] by [percentage]
+%       \item Implemented [specific system], reducing [specific metric] by [percentage]
+%       \item Conducted [specific test/analysis] to validate [specific aspect]
+%     \resumeItemListEnd
+%   \resumeSubHeadingListEnd
+% \vspace{-6mm}
+
+
+\section{\textbf{Professional Experience}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\resumeProject
+  {VNPT Data Corporation}
+  {IT intern}
+  {08/2017 - 02/2018}
+  {}
+\resumeItemListStart
+  \item Researching radius access control and managing local wifi network with Freeradius and Daloradius.
+\resumeItemListEnd
+
+\resumeProject
+  {Hanoi University of Science and Technology}
+  {Master student - Main topic: \textbf{Computer Vision}}
+  {09/2019 -- 08/2021}
+  {}
+\resumeItemListStart
+  \item Developed adaptive late fusion schemes for person re-identification (ReID). Integrated handcrafted and deep-learned features for multi-shot ReID.
+%  \item 
+\resumeItemListEnd
+
+\resumeProject
+  {Chonnam National University}
+  {Researcher - Main topic: \textbf{Time-series Analysis}}
+  {03/2021 -- 08/2022}
+  {{}[\href{https://github.com/nghianguyen7171/TVAE-RRS.git}{\textcolor{darkblue}{\faGithub}}]}
+\resumeItemListStart
+  \item Preprocessing of clinical data provided by Chonnam National University Hospitals. Applying the sliding window principle to solve the problem of early prediction of future deterioration of patient condition. Proposed Temporal Variational Autoencoder, which optimizes the extracted features through multitask learning to improve the prediction performance.
+  % \item Proposed food-organism utilization throughout the AI-based aquaculture industry. 
+  \item Developed a real-time prediction model to reduce late alarms in ICU settings. Focus on optimization and explainable AI (XAI) techniques. Applying principles of axiomatic attribution, contrastive learning, and gradient-based extraction for deep networks.
+\resumeItemListEnd
+
+
+\resumeProject
+{Springer Nature - Peer review works}
+{Reviewer}
+{09/2022 -- present}
+{}
+% {{}[\href{https://github.com/nghianguyen7171/new_mgsiameseTS.git}{\textcolor{darkblue}{\faGithub}}]}
+\resumeItemListStart
+\item Scientific Reports, Journal of Healthcare Informatics Research, International Journal of Emergency Medicine, Journal of Medical Systems, BMC Medicine, BMC Medical Informatics and Decision Making.
+\resumeItemListEnd
+
+% \resumeProject
+% {}
+% {Researcher}
+% {03/2024 -- 02/2025}
+% {{}[\href{https://github.com/nghianguyen7171/Deep_CFL.git}{\textcolor{darkblue}{\faGithub}}]}
+% \resumeItemListStart
+% \item Improving predictive model comprehensiveness through federated contrastive learning. In-hospital system integration.
+% \resumeItemListEnd
+
+\resumeProject
+  {National Economics University}
+  {Lecture - Faculty of Data Science and Artificial Intelligence, College of Technology}
+  {04/2025 -- Present}
+  {}
+
+
+
+
+
+
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+\section{\textbf{Skills}}
+\vspace{-0.4mm}
+\resumeHeadingSkillStart
+  \resumeSubItem{Programming Languages:}
+    {Python, R, C, C++, MATLAB, \LaTeX}
+  \resumeSubItem{Technologies:}
+    {Deep learning frameworks (PyTorch, Keras), Clinical data processing (time-series analysis, feature extraction), Federated learning, Explainable AI, LLM Frameworks.}
+  \resumeSubItem{Web and Database Systems:}
+    {HTML 5, PHP, SQL, MySQL}
+  % \resumeSubItem{Mathematics \& Statistics:}
+  %   {Statistical probability, Precision-recall trade-offs, Imbalance learning techniques.}
+  \resumeSubItem{Research \& Analysis:}
+    {AI \& Machine Learning Research, Data Processing, Error Analysis, Model Validation, Scientific Writing, Problem Solving.}
+  \resumeSubItem{Language:}
+    {English (IELTS: 5.5)}
+\resumeHeadingSkillEnd
+
+
+
+\section{\textbf{Patents and Publications} \hfill \textcolor{darkblue}{\scriptsize C=Conference, J=Journal, P=Patent, S=Submission}}
+\vspace{0.2mm}
+\small{
+\begin{enumerate}[leftmargin=*, labelsep=0.5em, align=left, widest={[\textbf{S.1}]}, itemindent=0em, label={\textbf{[\arabic*]}]}]
+\item[\textbf{[J.1]}] \textbf{Trong-Nghia Nguyen}, Soo-Hyung Kim, Bo-Gun Kho, Hyung-Jeong Yang, et al. (2024). \href{https://www.computer.org/csdl/magazine/ex/5555/01/10559396/1XR0hSHDdo4}{\textbf{Multi-Gradient Siamese Temporal Model for the Prediction of Clinical Events in Rapid Response Systems}}. \textit{IEEE Intelligent System}, Vol. 39, no. 6, PP. 58-69. DOI: 10.1109/MIS.2024.3408290.
+
+\item[\textbf{[J.2]}] \textbf{Trong-Nghia Nguyen}, Hyung-Jeong Yang, Bo-Gun Kho, Sae-Ryung Kang, and Soo-Hyung Kim, et al. (2024). \href{https://ieeexplore.ieee.org/document/10643963}{\textbf{Explainable Deep Contrastive Federated Learning System for Early Prediction of Clinical Status in-Intensive Care Unit}}. \textit{IEEE Access}, Vol. 12, PP. 117176-117202. DOI: 10.1109/ACCESS.2024.3447759.
+
+\item[\textbf{[J.3]}] \textbf{Trong-Nghia Nguyen}, Soo-Hyung Kim, Bo-Gun Kho, Nhu-Tai Do, N.K. Iyortsuun, Guee-Sang Lee, Hyung-Jeong Yang, et al. (2025). \href{https://www.sciencedirect.com/science/article/pii/S1746809424010334}{\textbf{Temporal Variational Autoencoder Model for In-hospital Clinical Emergency Prediction}}. \textit{Biomedical Signal Processing and Control}, Vol. 100, Part C, PP. 106975. DOI: 10.1016/j.bspc.2024.106975.
+
+\item[\textbf{[J.4]}] \textbf{Trong-Nghia Nguyen}, Soo-Hyung Kim, Nhu-Tai Do, Thai-Thi Ngoc Hong, Hyung Jeong Yang, Guee Sang Lee, et al. (2024). \href{https://koreascience.or.kr/article/JAKO202211040704921.page}{\textbf{A TabNet-Based System for Water Quality Prediction in Aquaculture}}. \textit{Smart Media Journal}, Vol. 11, PP. 39-52. DOI: 10.30693/SMJ.2022.11.2.39.
+
+\item[\textbf{[J.5]}] Minh-Duc Nguyen, Hyung-Jeong Yang, Duy-Phuong Dao, Soo-Hyung Kim, Seung-Won Kim, Ji-Eun Shin, Ngoc Anh Thi Nguyen, \textbf{Trong-Nghia Nguyen}, et al. (2025). \href{https://peerj.com/articles/cs-3158/}{\textbf{Dual-stream transformer approach for pain assessment using visual-physiological data modeling
+}}. \textit{PeerJ Computer Science 11:e3158}. DOI: 10.7717/peerj-cs.3158.
+
+\item[\textbf{[C.1]}] \textbf{Trong-Nghia Nguyen}, Thanh-Hung Vo, Bo-Gun Kho, Hyung-Jeong Yang, Guee-Sang Lee, Soo-Hyung Kim, et al. (2021). \href{https://koreascience.or.kr/article/CFKO202133648994961.page}{\textbf{Deep Interpretable Learning for a Rapid Response System}}. In \textit{Proceedings of the Korea Information Processing Society Conference}, pp. 805-807. Nov. 2021, Yeosu, Korea. DOI: 10.3745/PKIPS.y2021m11a.805.
+
+\item[\textbf{[C.2]}] \textbf{Trong-Nghia Nguyen}, Ngoc-Tu Vu, Bo-Gun Kho, Hyung-Jeong Yang, Soo-Hyung Kim, et al. (2021). \href{https://www.researchgate.net/publication/381229270_Deep_learning-based_model_for_rapid_prediction_of_in-_hospital_clinical_deterioration}{\textbf{Deep learning-based model for rapid prediction of in-hospital clinical deterioration}}. In \textit{Proc. 10th Int. Conf. Bigdata Applications and Services (BIGDAS 2022)}, pp. 81-88, Jeju, Korea, Nov. 2022.
+
+\item[\textbf{[C.3]}] T. -B. Nguyen, \textbf{T. -N. Nguyen}, H. -Q. Nguyen, T. -L. Nguyen, T. T. -T. Pham, et al. (2020). \href{https://ieeexplore.ieee.org/document/9237782}{\textbf{How feature fusion can help to improve multi-shot person re-identification performance?}}. In \textit{International Conference on Multimedia Analysis and Pattern Recognition (MAPR)}, pp. 1-6, Hanoi, Vietnam. %DOI: 10.1109/MAPR49794.2020.9237782.
+
+\item[\textbf{[C.4]}] Ngoc Tu Vu, \textbf{Trong-Nghia Nguyen}, Van-Thong Huynh, Soo-Hyung Kim, et al. (2023). \href{https://ieeexplore.ieee.org/document/10208411}{\textbf{Ensemble Spatial and Temporal Vision Transformer for Action Units Detection}}. In \textit{Proc. CVPR 2023 Workshop and Competition on Affective Behavior Analysis in-the-wild}, pp. 5769-5775. June. 2023, Vancouver, Canada. %DOI: 10.1109/CVPRW59228.2023.00612.
+
+\item[\textbf{[C.5]}] Eun-Bin Choi, Hong-Hai Nguyen, \textbf{Trong-Nghia Nguyen}, Soo-Hyung Kim, et al. (2022). \href{https://manuscriptlink-society-file.s3-ap-northeast-1.amazonaws.com/kism/conference/sma2022fall/abs/0023F.pdf}{\textbf{Stress analysis based on feature late fusion strategy}}. In \textit{Proc. Int. Conf. Smart Media and Applications (SMA2022)}, pp. 110-114. Oct. 2022, Saipan, USA. 
+
+\item[\textbf{[C.6]}] Battulga Ulziisaikhan, \textbf{Trong-Nghia Nguyen}, Soo-Hyung Kim, et al. (2024). \href{https://www.manuscriptlink.com/society/kips/conference/ack2024/programBook/presentation/pdf/oral/KIPS_C2024B0140}{\textbf{A Hybrid CNN-LSTM Approach for Effective Denoising of
+EEG Signals Contaminated by EOG Artifacts}}. In \textit{Annual Conference of Korea Information Processing Society (ACK 2024)}, Vol. 31, No. 2, pp. 573-576, Gwanju, Korea.
+%\item[\textbf{[S.1]}] Your Name, et al. (Year). \textbf{Title of Submitted Paper}. Manuscript submitted for publication in \textit{Journal Name}.
+
+\item[\textbf{[C.7]}] \textbf{Trong-Nghia Nguyen}, Hong-Hai Nguyen, Van-Thong Huynh, Ngoc-Tu Vu, Tuan-Anh Tran, Bo-Gun Kho, and Soo-Hyung Kim, et al. (2026). \href{https://link.springer.com/chapter/10.1007/978-981-95-4963-4_10}{\textbf{MediFusion-Flex: An Adaptive Multimodal Deep Learning Framework for Clinical Deterioration Prediction in Emergency Medicine}}. In \textit{Multi-disciplinary Trends in Artificial Intelligence (MIWAI 2025)}, Lecture Notes in Computer Science, Vol. 16355, pp. 115-126. Springer Nature Singapore. DOI: 10.1007/978-981-95-4963-4\_10.
+
+\item[\textbf{[P.1]}] Kim Soo-hyung, \textbf{Trong-Nghia Nguyen}, Kho Bo-Gun, Lee Guee-Sang, Yang Hyeong-Jeong, et al. (2022). \href{https://worldwide.espacenet.com/patent/search/family/091949647/publication/KR20240104996A?q=pn%3DKR20240104996A&queryLang=en%3Ade%3Afr}{{\textbf{HOSPITAL EMERGENCY PATIENT RAPID RESPONSE SYSTEM AND METHOD BY MONITORING VITAL SIGNS}}}. Application number: 10-2022-0187771 (2022.12.28) (Physician Scientist/AI-Hub).
+
+\item[\textbf{[S.1]}] \textbf{Trong-Nghia Nguyen}, Van-Thien Luong, Hong-Hai Nguyen, Van-Thong Huynh, Bo-Gun Kho, and Soo-Hyung Kim, et al. {\textbf{AI-Driven Early Warning Systems in Emergency Care: Implementing a Multi-Gradient Network for Real-Time Clinical Deterioration Prediction}}. \textit{Submitted to Journal of Medical Systems, 2025}.
+
+
+\item[\textbf{[S.3]}] Battulga Ulziisaikhan, \textbf{Trong-Nghia Nguyen}, and Soo-Hyung Kim, et al. {\textbf{Band2CleanFormer: Integrating Band-Specific Processing and Inter-Band Attention for Robust EEG Denoising}}. \textit{Submitted to Biomedical Signal Processing and Control, 2025}.
+
+
+
+
+\end{enumerate}
+}
+
+
+\section{\textbf{Honors and Awards}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\resumeProject
+  {Aquaculture Artificial Intelligence Model 2021 Contest (Gold prize).}
+  {Ministry of Science and ICT and the Artificial Intelligence Information Society Promotion Agency}
+  {2021}
+  {{}[\href{http://sarc.jnu.ac.kr/contest/20211105/}{\textcolor{darkblue}{\faIcon{globe}}}]}
+% \resumeItemListStart
+%   \item Brief description of the award and its significance
+%   \item Impact or recognition associated with the award
+% \resumeItemListEnd
+
+\resumeProject
+  {The 3rd Korean Emotion Recognition Challenge (Silver prize).}
+  {Kaggle - Chonnam National University}
+  {2021}
+  {{}[\href{https://www.kaggle.com/competitions/kerc2021/overview}{\textcolor{darkblue}{\faIcon{globe}}}]}
+% \resumeItemListStart
+%   \item Brief description of the award and its significance
+%   \item Impact or recognition associated with the award
+% \resumeItemListEnd
+
+\resumeProject
+  {CIBMTR - Equity in post-HCT Survival Predictions (Bronze prize).}
+  {Kaggle - CIBMTR}
+  {2025}
+  {{}[\href{https://www.kaggle.com/competitions/equity-post-HCT-survival-predictions}{\textcolor{darkblue}{\faIcon{globe}}}]}
+
+\resumeSubHeadingListEnd
+
+\vspace{-6mm}
+
+
+% \section{\textbf{Leadership Experience}}
+% \vspace{-0.4mm}
+% \resumeSubHeadingListStart
+% \resumeProject
+%   {Leadership Role A}
+%   {Organization/Institution Name}
+%   {Month Year - Month Year}
+%   {{}[\href{https://organization-a-link.com}{\textcolor{darkblue}{\faIcon{globe}}}]}
+% \resumeItemListStart
+%   \item Key responsibility or achievement in this role
+%   \item Quantifiable impact or improvement made during tenure
+%   \item Initiative taken or project led
+% \resumeItemListEnd
+
+% \resumeProject
+%   {Leadership Role B}
+%   {Organization/Institution Name}
+%   {Month Year - Month Year}
+%   {{}[\href{https://organization-b-link.com}{\textcolor{darkblue}{\faIcon{globe}}}]}
+% \resumeItemListStart
+%   \item Key responsibility or achievement in this role
+%   \item Quantifiable impact or improvement made during tenure
+%   \item Initiative taken or project led
+% \resumeItemListEnd
+
+% \resumeSubHeadingListEnd
+
+% \vspace{-6mm}
+
+% \section{\textbf{Volunteer Experience}}
+% \vspace{-0.4mm}
+% \resumeSubHeadingListStart
+% \resumeProject
+%   {Volunteer Role A}
+%   {Organization Name}
+%   {Month Year - Month Year}
+%   {{}[\href{https://volunteer-org-a-link.com}{\textcolor{darkblue}{\faIcon{globe}}}]}
+% \resumeItemListStart
+%   \item Key responsibility or contribution in this role
+%   \item Impact of your volunteer work
+%   \item Skills developed or applied during this experience
+% \resumeItemListEnd
+
+% \resumeProject
+%   {Volunteer Role B}
+%   {Organization Name}
+%   {Month Year - Present}
+%   {{}[\href{https://volunteer-org-b-link.com}{\textcolor{darkblue}{\faIcon{globe}}}]}
+% \resumeItemListStart
+%   \item Key responsibility or contribution in this role
+%   \item Impact of your volunteer work
+%   \item Skills developed or applied during this experience
+% \resumeItemListEnd
+
+% \resumeSubHeadingListEnd
+% \vspace{-6mm}
+
+% \section{\textbf{Professional Memberships}}
+% \vspace{-0.4mm}
+% \resumeSubHeadingListStart
+% \resumePOR{Professional Organization A}
+%     {, Membership ID: XXXXXXXX}
+%     {Month Year - Present}
+% \resumePOR{Professional Organization B}
+%     {, \href{https://membership-certificate-link.com}{Membership ID: XXXXXXXX}}
+%     {Month Year - Present}
+% \resumePOR{Professional Organization C}
+%     {, \href{https://membership-certificate-link.com}{Membership ID: XXXXXXXX}}
+%     {Month Year - Present}
+
+% \resumeSubHeadingListEnd
+% \vspace{-6mm}
+
+% \section{\textbf{Certifications}}
+% \vspace{-0.2mm}
+% \resumeSubHeadingListStart
+% \resumePOR{}{\href{https://certification-link-a.com}{
+% \textbf{Certification A}
+% }}{Month Year}
+% \resumePOR{}{
+% \textbf{Certifying Body:} {{\href{https://certification-link-b.com}{Certification B}}}}{Month Year}
+% \resumePOR{}{
+% \textbf{Certifying Body:} {{\href{https://certification-link-c.com}{Certification C}}}}{Month Year}
+% \resumePOR{}{\href{https://certification-link-d.com}{
+% \textbf{Certification D}
+% }}{Month Year}
+
+% \resumeSubHeadingListEnd
+% \vspace{-6mm}
+
+% \section{\textbf{Additional Information}}
+% \vspace{-0.4mm}
+% \small{
+% \textbf{Languages:} Language A (Proficiency level), Language B (Proficiency level), Language C (Proficiency level)
+
+% \textbf{Interests:} Interest 1, Interest 2, Interest 3, Interest 4
+% }
+% \vspace{-4mm}
+
+
+% \section{\textbf{References}}
+% \vspace{-0.2mm}
+% \small{
+% \begin{enumerate}[leftmargin=*,labelsep=2mm]
+% \item \textbf{Reference Person 1}\\
+%    Job Title, Department\\
+%    Organization/Institution Name\\
+%    Email: email1@example.com\\
+%    Phone: +X-XXX-XXX-XXXX\\
+%    \textit{Relationship: [e.g., Thesis Advisor, Manager, etc.]}
+
+% \item \textbf{Reference Person 2}\\
+%    Job Title, Department\\
+%    Organization/Institution Name\\
+%    Email: email2@example.com\\
+%    Phone: +X-XXX-XXX-XXXX\\
+%    \textit{Relationship: [e.g., Project Supervisor, Colleague, etc.]}
+
+% \item \textbf{Reference Person 3}\\
+%    Job Title, Department\\
+%    Organization/Institution Name\\
+%    Email: email3@example.com\\
+%    Phone: +X-XXX-XXX-XXXX\\
+%    \textit{Relationship: [e.g., Mentor, Collaborator, etc.]}
+% \end{enumerate}
+% }
+
+\end{document}

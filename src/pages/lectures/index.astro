@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { lectures } from '../../data/lectures';
+---
+
+<BaseLayout title="Lectures" description="Courses taught by Trong-Nghia Nguyen at National Economics University.">
+  <h1>Lectures</h1>
+  <p class="lead">
+    Course sites for current teaching. Each link opens the dedicated course website.
+  </p>
+
+  <ul class="course-list">
+    {
+      lectures.map((course) => (
+        <li class="course-item">
+          <a href={course.url} target="_blank" rel="noopener noreferrer">
+            {course.title}
+          </a>
+          <p class="course-desc">{course.description}</p>
+        </li>
+      ))
+    }
+  </ul>
+</BaseLayout>

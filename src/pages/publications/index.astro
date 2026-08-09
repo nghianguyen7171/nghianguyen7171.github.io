@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { publicationsByYear } from '../../data/publications';
+
+const groups = publicationsByYear();
+---
+
+<BaseLayout title="Publications" description="Selected journal and conference publications by Trong-Nghia Nguyen.">
+  <h1>Publications</h1>
+  <p class="lead">Journal articles and conference papers in reverse chronological order.</p>
+
+  {
+    groups.map(({ year, items }) => (
+      <section class="pub-year" aria-labelledby={`year-${year}`}>
+        <h2 id={`year-${year}`}>{year}</h2>
+        <ul class="pub-list">
+          {items.map((pub) => (
+            <li class="pub-item">
+              {pub.url ? (
+                <a class="pub-title" href={pub.url} target="_blank" rel="noopener noreferrer">
+                  {pub.title}
+                </a>
+              ) : (
+                <span class="pub-title">{pub.title}</span>
+              )}
+              {pub.selected && <span class="badge">Selected</span>}
+              <p class="pub-meta">{pub.authors}</p>
+              <p class="pub-meta">
+                <em>{pub.venue}</em>
+                {pub.type === 'journal' ? ' · Journal' : ' · Conference'}
+                {pub.doi && (
+                  <>
+                    {' · '}
+                    <a href={`https://doi.org/${pub.doi}`} target="_blank" rel="noopener noreferrer">
+                      DOI
+                    </a>
+                  </>
+                )}
+              </p>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+</BaseLayout>
