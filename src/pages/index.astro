@@ -33,6 +33,19 @@ import { site } from '../data/site';
     {site.interests.map((item) => <li>{item}</li>)}
   </ul>
 
+  <h2>Labs</h2>
+  <ul class="lab-list">
+    {
+      site.labs.map((lab) => (
+        <li class="lab-item">
+          <a href={lab.url} target="_blank" rel="noopener noreferrer">
+            {lab.name}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+
   <h2>Education</h2>
   <ul class="list-plain">
     {

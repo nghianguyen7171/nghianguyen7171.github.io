@@ -50,6 +50,20 @@ export const site = {
     'Korean Emotion Recognition Challenge 2021 — Silver prize',
     'Equity in post-HCT Survival Predictions (Kaggle) 2025 — Bronze prize',
   ],
+  labs: [
+    {
+      name: 'Business AI Lab',
+      url: 'https://bailab.vn/',
+    },
+    {
+      name: 'Pattern Recognition Lab',
+      url: 'https://prlabjnu.github.io/',
+    },
+    {
+      name: 'Bio Research Team',
+      url: 'https://neu-bio-research-team.github.io/NEU-BRT-SRT/',
+    },
+  ],
 };
 
 export const nav = [

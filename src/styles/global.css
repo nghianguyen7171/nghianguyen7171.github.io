@@ -327,6 +327,31 @@ p {
   margin: 0.3rem 0 0;
 }
 
+.lab-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lab-item {
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.lab-item:first-child {
+  border-top: 1px solid var(--rule);
+}
+
+.lab-item a {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.lab-item a:hover {
+  color: var(--accent);
+}
+
 .course-list {
   list-style: none;
   margin: 0;
