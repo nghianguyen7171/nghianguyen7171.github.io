@@ -71,7 +71,7 @@ Ignored locally (not in git): `node_modules/`, `dist/`, `.astro/`
 
 ## Updating content
 - Bio / links / education / awards → `src/data/site.ts`
-- Publications → `src/data/publications.ts`
+- Publications → `src/data/publications.ts` (set `type`, and for journals optional `indexing` / `if` / `jcr` / `quartile`)
 - Lectures → `src/data/lectures.ts`
 - CV PDF → replace `public/cv/CV_Nghia_2026.pdf`
 
@@ -81,11 +81,16 @@ Removed non-build leftovers: `archive/`, `CV_Nghia_ACD/` (LaTeX source; site use
 ## Status
 **Last Updated**: August 9, 2026  
 **AI Readiness**: 100%  
-**Status**: Lean Astro repo; only files required to build and deploy remain
+**Status**: Lean Astro repo; publications show Journal/Conference + IF/JCR/Q labels
 
-**Next session**: Confirm Pages → GitHub Actions; update ResearchGate URL if needed; add papers via `publications.ts`.
+**Next session**: Confirm Pages → GitHub Actions; verify/correct journal IF–Q values if needed; update ResearchGate URL if needed; add papers via `publications.ts`.
 
 ## Change Log
+### 2026-08-09 — Publication type and journal metric labels
+- Publications page: All / Journals / Conferences filter
+- Per-item labels: Journal|Conference, SCIE, IF, JCR %, Q1–Q4 (SC Lab–style)
+- Metrics fields on journal entries in `src/data/publications.ts`
+
 ### 2026-08-09 — Profile photo shows full frame
 - `.hero-photo`: dropped square `aspect-ratio: 1` / `object-fit: cover` crop
 - Uses natural portrait height (`height: auto`, `object-fit: contain`) so head and shoulders are fully visible

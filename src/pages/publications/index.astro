@@ -1,21 +1,48 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { publicationsByYear } from '../../data/publications';
+import { publications, publicationsByYear } from '../../data/publications';
 
 const groups = publicationsByYear();
+const journalCount = publications.filter((p) => p.type === 'journal').length;
+const conferenceCount = publications.filter((p) => p.type === 'conference').length;
 ---
 
 <BaseLayout title="Publications" description="Selected journal and conference publications by Trong-Nghia Nguyen.">
   <h1>Publications</h1>
-  <p class="lead">Journal articles and conference papers in reverse chronological order.</p>
+  <p class="lead">
+    Journal articles and conference papers in reverse chronological order.
+    Journal metrics (IF, JCR, Q) follow recent Journal Citation Reports where available.
+  </p>
+
+  <div class="pub-filters" role="group" aria-label="Filter publications by type">
+    <button type="button" class="pub-filter is-active" data-filter="all">
+      All <span class="pub-filter-count">{publications.length}</span>
+    </button>
+    <button type="button" class="pub-filter" data-filter="journal">
+      Journals <span class="pub-filter-count">{journalCount}</span>
+    </button>
+    <button type="button" class="pub-filter" data-filter="conference">
+      Conferences <span class="pub-filter-count">{conferenceCount}</span>
+    </button>
+  </div>
 
   {
     groups.map(({ year, items }) => (
-      <section class="pub-year" aria-labelledby={`year-${year}`}>
+      <section class="pub-year" data-year={year} aria-labelledby={`year-${year}`}>
         <h2 id={`year-${year}`}>{year}</h2>
         <ul class="pub-list">
           {items.map((pub) => (
-            <li class="pub-item">
+            <li class="pub-item" data-type={pub.type}>
+              <div class="pub-labels">
+                <span class:list={['tag', pub.type === 'journal' ? 'tag-journal' : 'tag-conference']}>
+                  {pub.type === 'journal' ? 'Journal' : 'Conference'}
+                </span>
+                {pub.indexing && <span class="tag tag-index">{pub.indexing}</span>}
+                {pub.if != null && <span class="tag tag-if">IF {pub.if}</span>}
+                {pub.jcr && <span class="tag tag-jcr">JCR {pub.jcr}</span>}
+                {pub.quartile && <span class="tag tag-q">{pub.quartile}</span>}
+                {pub.selected && <span class="tag tag-selected">Selected</span>}
+              </div>
               {pub.url ? (
                 <a class="pub-title" href={pub.url} target="_blank" rel="noopener noreferrer">
                   {pub.title}
@@ -23,11 +50,9 @@ const groups = publicationsByYear();
               ) : (
                 <span class="pub-title">{pub.title}</span>
               )}
-              {pub.selected && <span class="badge">Selected</span>}
               <p class="pub-meta">{pub.authors}</p>
               <p class="pub-meta">
                 <em>{pub.venue}</em>
-                {pub.type === 'journal' ? ' · Journal' : ' · Conference'}
                 {pub.doi && (
                   <>
                     {' · '}
@@ -44,3 +69,27 @@ const groups = publicationsByYear();
     ))
   }
 </BaseLayout>
+
+<script>
+  const filters = document.querySelectorAll<HTMLButtonElement>('.pub-filter');
+  const items = document.querySelectorAll<HTMLElement>('.pub-item');
+  const years = document.querySelectorAll<HTMLElement>('.pub-year');
+
+  function applyFilter(type: string) {
+    items.forEach((item) => {
+      const show = type === 'all' || item.dataset.type === type;
+      item.hidden = !show;
+    });
+    years.forEach((section) => {
+      const visible = section.querySelectorAll('.pub-item:not([hidden])').length > 0;
+      section.hidden = !visible;
+    });
+    filters.forEach((btn) => {
+      btn.classList.toggle('is-active', btn.dataset.filter === type);
+    });
+  }
+
+  filters.forEach((btn) => {
+    btn.addEventListener('click', () => applyFilter(btn.dataset.filter ?? 'all'));
+  });
+</script>

@@ -1,12 +1,23 @@
+export type PubType = 'journal' | 'conference';
+export type Quartile = 'Q1' | 'Q2' | 'Q3' | 'Q4';
+
 export type Publication = {
   title: string;
   authors: string;
   venue: string;
   year: number;
-  type: 'journal' | 'conference';
+  type: PubType;
   url?: string;
   doi?: string;
   selected?: boolean;
+  /** Indexing label, e.g. SCIE / SCI / ESCI */
+  indexing?: string;
+  /** Journal Impact Factor */
+  if?: number;
+  /** JCR rank percentile, e.g. "25%" */
+  jcr?: string;
+  /** JCR best quartile */
+  quartile?: Quartile;
 };
 
 export const publications: Publication[] = [
@@ -19,6 +30,10 @@ export const publications: Publication[] = [
     type: 'journal',
     url: 'https://www.sciencedirect.com/science/article/pii/S1746809426004143',
     doi: '10.1016/j.bspc.2026.109860',
+    indexing: 'SCIE',
+    if: 5.7,
+    jcr: '25%',
+    quartile: 'Q2',
   },
   {
     title:
@@ -42,6 +57,10 @@ export const publications: Publication[] = [
     type: 'journal',
     url: 'https://doi.org/10.1016/j.bspc.2024.106975',
     doi: '10.1016/j.bspc.2024.106975',
+    indexing: 'SCIE',
+    if: 5.7,
+    jcr: '25%',
+    quartile: 'Q2',
   },
   {
     title:
@@ -53,6 +72,9 @@ export const publications: Publication[] = [
     type: 'journal',
     url: 'https://doi.org/10.7717/peerj-cs.3158',
     doi: '10.7717/peerj-cs.3158',
+    indexing: 'SCIE',
+    if: 2.9,
+    quartile: 'Q2',
   },
   {
     title:
@@ -64,6 +86,9 @@ export const publications: Publication[] = [
     type: 'journal',
     url: 'https://ieeexplore.ieee.org/abstract/document/10643963',
     doi: '10.1109/ACCESS.2024.3447759',
+    indexing: 'SCIE',
+    if: 3.6,
+    quartile: 'Q2',
   },
   {
     title:
@@ -75,6 +100,9 @@ export const publications: Publication[] = [
     url: 'https://ieeexplore.ieee.org/document/10559396',
     doi: '10.1109/MIS.2024.3408290',
     selected: true,
+    indexing: 'SCIE',
+    if: 6.1,
+    quartile: 'Q1',
   },
   {
     title:
@@ -145,10 +173,12 @@ export const publications: Publication[] = [
   },
 ];
 
-export function publicationsByYear() {
-  const years = [...new Set(publications.map((p) => p.year))].sort((a, b) => b - a);
+export function publicationsByYear(type?: PubType | 'all') {
+  const filtered =
+    !type || type === 'all' ? publications : publications.filter((p) => p.type === type);
+  const years = [...new Set(filtered.map((p) => p.year))].sort((a, b) => b - a);
   return years.map((year) => ({
     year,
-    items: publications.filter((p) => p.year === year),
+    items: filtered.filter((p) => p.year === year),
   }));
 }

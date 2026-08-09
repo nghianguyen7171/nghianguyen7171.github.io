@@ -201,6 +201,43 @@ p {
   color: var(--accent);
 }
 
+.pub-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0 0 0.5rem;
+}
+
+.pub-filter {
+  appearance: none;
+  border: 1px solid var(--rule);
+  background: var(--bg-elevated);
+  color: var(--ink-muted);
+  font: inherit;
+  font-size: 0.88rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.pub-filter:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.pub-filter.is-active {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.pub-filter-count {
+  margin-left: 0.2rem;
+  opacity: 0.75;
+  font-size: 0.82em;
+}
+
 .pub-year {
   margin-top: 2rem;
 }
@@ -220,6 +257,60 @@ p {
   border-top: 1px solid var(--rule);
 }
 
+.pub-labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.45rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.12rem 0.45rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-radius: 3px;
+  line-height: 1.4;
+  vertical-align: middle;
+}
+
+.tag-journal {
+  color: #1f4d4a;
+  background: rgba(31, 77, 74, 0.1);
+}
+
+.tag-conference {
+  color: #5c4a2a;
+  background: rgba(140, 110, 50, 0.12);
+}
+
+.tag-index {
+  color: #2563eb;
+  background: rgba(37, 99, 235, 0.08);
+}
+
+.tag-if {
+  color: #be185d;
+  background: rgba(255, 107, 157, 0.12);
+}
+
+.tag-jcr {
+  color: #6d28d9;
+  background: rgba(139, 92, 246, 0.1);
+}
+
+.tag-q {
+  color: #0f766e;
+  background: rgba(15, 118, 110, 0.1);
+}
+
+.tag-selected {
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
 .pub-title {
   font-weight: 600;
   color: var(--ink);
@@ -234,20 +325,6 @@ p {
   color: var(--ink-muted);
   font-size: 0.92rem;
   margin: 0.3rem 0 0;
-}
-
-.badge {
-  display: inline-block;
-  margin-left: 0.4rem;
-  padding: 0.08rem 0.4rem;
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--accent);
-  background: var(--accent-soft);
-  border-radius: 2px;
-  vertical-align: middle;
 }
 
 .course-list {
