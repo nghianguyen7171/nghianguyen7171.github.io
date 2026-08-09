@@ -149,15 +149,16 @@ p {
 
 .hero {
   display: grid;
-  grid-template-columns: 1fr 10.5rem;
+  grid-template-columns: 1fr 9.5rem;
   gap: 1.75rem 2rem;
   align-items: start;
 }
 
 .hero-photo {
-  width: 10.5rem;
-  aspect-ratio: 1;
-  object-fit: cover;
+  width: 9.5rem;
+  height: auto;
+  object-fit: contain;
+  object-position: center top;
   border-radius: 2px;
   background: var(--accent-soft);
 }
@@ -316,7 +317,7 @@ p {
   }
 
   .hero-photo {
-    width: 8.5rem;
+    width: 7.5rem;
     order: -1;
   }
 

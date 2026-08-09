@@ -84,3 +84,8 @@ Removed non-build leftovers: `archive/`, `CV_Nghia_ACD/` (LaTeX source; site use
 **Status**: Lean Astro repo; only files required to build and deploy remain
 
 **Next session**: Confirm Pages → GitHub Actions; update ResearchGate URL if needed; add papers via `publications.ts`.
+
+## Change Log
+### 2026-08-09 — Profile photo shows full frame
+- `.hero-photo`: dropped square `aspect-ratio: 1` / `object-fit: cover` crop
+- Uses natural portrait height (`height: auto`, `object-fit: contain`) so head and shoulders are fully visible
