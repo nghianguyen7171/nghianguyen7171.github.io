@@ -8,7 +8,7 @@ export const site = {
   address: '207 Giai Phong Street, Bach Mai Ward, Hanoi, Vietnam',
   facultyPage: 'https://fda.neu.edu.vn/fda-members/nguyen-trong-nghia/',
   cvPdf: '/cv/CV_Nghia_2026.pdf',
-  profileImage: '/images/profile.jpeg',
+  profileImage: '/images/NghiaNguyen.jpg',
   links: {
     email: 'mailto:nghiant@neu.edu.vn',
     scholar: 'https://scholar.google.com/citations?user=kl6Sz_wAAAAJ',

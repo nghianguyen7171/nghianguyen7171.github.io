@@ -41,7 +41,7 @@ LICENSE
 backup-context.md
 public/
   cv/CV_Nghia_2026.pdf
-  images/profile.jpeg
+  images/NghiaNguyen.jpg
   favicon.*
 src/
   components/
