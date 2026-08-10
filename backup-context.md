@@ -67,6 +67,7 @@ Ignored locally (not in git): `node_modules/`, `dist/`, `.astro/`
 | Business AI Lab | https://bailab.vn/ |
 | Pattern Recognition Lab | https://prlabjnu.github.io/ |
 | Bio Research Team | https://neu-bio-research-team.github.io/NEU-BRT-SRT/ |
+| Causal Perception and Reasoning | https://cpr.ai.vn/ |
 
 ## Professional links
 - Email: nghiant@neu.edu.vn
@@ -113,13 +114,16 @@ Removed non-build leftovers: `archive/`, `CV_Nghia_ACD/` (LaTeX source; site use
 - `a2e98ba` — Rebuild personal site with Astro, replacing al-folio/Jekyll
 
 ## Status
-**Last Updated**: August 9, 2026, 20:23 (UTC+7)  
+**Last Updated**: August 10, 2026, 12:58 (UTC+7)  
 **AI Readiness**: 100%  
-**Status**: Astro site current — Labs on About; publication type + IF/JCR/Q labels; full portrait photo
+**Status**: Astro site current — four Labs on About; publication type + IF/JCR/Q labels; full portrait photo
 
 **Next session**: Confirm Pages → GitHub Actions if live site still shows old theme; verify/correct journal IF–Q values if needed; update ResearchGate URL if needed; add papers via `publications.ts`.
 
 ## Change Log
+### 2026-08-10 — Add CPR lab
+- Labs: added Causal Perception and Reasoning — https://cpr.ai.vn/
+
 ### 2026-08-09 — Context refresh
 - Expanded backup with Labs URLs, publication metric table, About identity fields, and commit lineage
 

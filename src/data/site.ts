@@ -63,6 +63,10 @@ export const site = {
       name: 'Bio Research Team',
       url: 'https://neu-bio-research-team.github.io/NEU-BRT-SRT/',
     },
+    {
+      name: 'Causal Perception and Reasoning',
+      url: 'https://cpr.ai.vn/',
+    },
   ],
 };
 
