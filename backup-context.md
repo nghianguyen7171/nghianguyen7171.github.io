@@ -114,13 +114,18 @@ Removed non-build leftovers: `archive/`, `CV_Nghia_ACD/` (LaTeX source; site use
 - `a2e98ba` — Rebuild personal site with Astro, replacing al-folio/Jekyll
 
 ## Status
-**Last Updated**: August 10, 2026, 12:58 (UTC+7)  
+**Last Updated**: September 21, 2026, 21:40 (UTC+7)  
 **AI Readiness**: 100%  
-**Status**: Astro site current — four Labs on About; publication type + IF/JCR/Q labels; full portrait photo
+**Status**: Astro site current — Labs on About; publication labels; SMILESGNN (MAPR 2026) added
 
 **Next session**: Confirm Pages → GitHub Actions if live site still shows old theme; verify/correct journal IF–Q values if needed; update ResearchGate URL if needed; add papers via `publications.ts`.
 
 ## Change Log
+### 2026-09-21 — Add SMILESGNN (MAPR 2026)
+- Conference paper: SMILESGNN: Interpretable Clinical Toxicity Prediction via SMILES-Graph Cross-Attention Fusion
+- Venue: MAPR 2026, pp. 466–471; DOI 10.1109/MAPR72750.2026.11685822
+- Link: https://ieeexplore.ieee.org/document/11685822
+
 ### 2026-08-10 — Add CPR lab
 - Labs: added Causal Perception and Reasoning — https://cpr.ai.vn/
 

@@ -49,6 +49,18 @@ export const publications: Publication[] = [
     selected: true,
   },
   {
+    title:
+      'SMILESGNN: Interpretable Clinical Toxicity Prediction via SMILES-Graph Cross-Attention Fusion',
+    authors:
+      'Quang Minh Nguyen, Thuy Quynh Nguyen, Duc Minh Le, Ho Nhat Minh Nguyen, Thanh Long Dai Doan, Trong-Nghia Nguyen',
+    venue:
+      'International Conference on Multimedia Analysis and Pattern Recognition (MAPR), pp. 466–471',
+    year: 2026,
+    type: 'conference',
+    url: 'https://ieeexplore.ieee.org/document/11685822',
+    doi: '10.1109/MAPR72750.2026.11685822',
+  },
+  {
     title: 'Temporal Variational Autoencoder Model for In-hospital Clinical Emergency Prediction',
     authors:
       'Trong-Nghia Nguyen, Soo-Hyung Kim, Bo-Gun Kho, Nhu-Tai Do, Ngumimi-Karen Iyortsuun, Hyung-Jeong Yang',
