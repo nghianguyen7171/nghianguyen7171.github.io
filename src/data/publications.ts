@@ -78,6 +78,17 @@ export const publications: Publication[] = [
   },
   {
     title:
+      'Pain Presence, Not Location: A Causal and Information-Theoretic Analysis of Pain Assessment from Peripheral Physiology',
+    authors: 'Hong Hai Nguyen, Thuy Thi Pham, Trong-Nghia Nguyen, Van Thong Huynh',
+    venue:
+      'International Conference on Affective Computing and Intelligent Interaction Workshops and Demos (ACIIW), pp. 1–7',
+    year: 2026,
+    type: 'conference',
+    url: 'https://ieeexplore.ieee.org/document/11712100',
+    doi: '10.1109/ACIIW71585.2026.11712100',
+  },
+  {
+    title:
       'SMILESGNN: Interpretable Clinical Toxicity Prediction via SMILES-Graph Cross-Attention Fusion',
     authors:
       'Quang Minh Nguyen, Thuy Quynh Nguyen, Duc Minh Le, Ho Nhat Minh Nguyen, Thanh Long Dai Doan, Trong-Nghia Nguyen',

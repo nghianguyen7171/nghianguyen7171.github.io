@@ -116,13 +116,17 @@ Removed non-build leftovers: `archive/`, `CV_Nghia_ACD/` (LaTeX source; site use
 - `a2e98ba` — Rebuild personal site with Astro, replacing al-folio/Jekyll
 
 ## Status
-**Last Updated**: November 18, 2026, 17:37 (UTC+7)  
+**Last Updated**: November 18, 2026, 17:39 (UTC+7)  
 **AI Readiness**: 100%  
-**Status**: Astro site current — Labs on About; publication labels; MaRENet + RiskHGT/Healthcare 2026 added
+**Status**: Astro site current — Labs on About; publication labels; ACIIW 2026 paper added
 
 **Next session**: Confirm Pages → GitHub Actions if live site still shows old theme; verify/correct journal IF–Q values if needed; update ResearchGate URL if needed; add papers via `publications.ts`.
 
 ## Change Log
+### 2026-11-18 — Add ACIIW 2026 conference paper
+- Pain Presence, Not Location…: ACIIW 2026, pp. 1–7; DOI 10.1109/ACIIW71585.2026.11712100
+- Link: https://ieeexplore.ieee.org/document/11712100
+
 ### 2026-11-18 — Add MaRENet and Healthcare (RiskHGT) journals
 - MaRENet: Cluster Computing; DOI 10.1007/s10586-026-06747-w; SCIE · IF 5.5 · Q1
 - Multi-Type Clinical Interaction Modeling…: Healthcare 14(22):3869; DOI 10.3390/healthcare14223869; SCIE · IF 3.4 · Q1
