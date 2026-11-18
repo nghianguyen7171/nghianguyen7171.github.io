@@ -124,7 +124,7 @@ Removed non-build leftovers: `archive/`, `CV_Nghia_ACD/` (LaTeX source; site use
 
 ## Change Log
 ### 2026-11-18 — Bolder Journal/Conference tag colors
-- Journal: solid dark blue (`#0b3d91`); Conference: solid red (`#c1121f`)
+- Journal: solid red (`#c1121f`); Conference: solid dark blue (`#0b3d91`)
 
 ### 2026-11-18 — Add ACIIW 2026 conference paper
 - Pain Presence, Not Location…: ACIIW 2026, pp. 1–7; DOI 10.1109/ACIIW71585.2026.11712100
