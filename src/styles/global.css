@@ -327,6 +327,11 @@ p {
   margin: 0.3rem 0 0;
 }
 
+.author-me {
+  color: var(--ink);
+  font-weight: 700;
+}
+
 .lab-list {
   list-style: none;
   margin: 0;

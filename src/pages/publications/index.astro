@@ -5,6 +5,12 @@ import { publications, publicationsByYear } from '../../data/publications';
 const groups = publicationsByYear();
 const journalCount = publications.filter((p) => p.type === 'journal').length;
 const conferenceCount = publications.filter((p) => p.type === 'conference').length;
+
+const AUTHOR_NAME = /Trong[-\s]?Nghia Nguyen/g;
+
+function highlightAuthor(authors: string) {
+  return authors.replace(AUTHOR_NAME, '<strong class="author-me">$&</strong>');
+}
 ---
 
 <BaseLayout title="Publications" description="Selected journal and conference publications by Trong-Nghia Nguyen.">
@@ -50,7 +56,7 @@ const conferenceCount = publications.filter((p) => p.type === 'conference').leng
               ) : (
                 <span class="pub-title">{pub.title}</span>
               )}
-              <p class="pub-meta">{pub.authors}</p>
+              <p class="pub-meta" set:html={highlightAuthor(pub.authors)} />
               <p class="pub-meta">
                 <em>{pub.venue}</em>
                 {pub.doi && (

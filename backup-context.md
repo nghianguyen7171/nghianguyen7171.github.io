@@ -116,13 +116,16 @@ Removed non-build leftovers: `archive/`, `CV_Nghia_ACD/` (LaTeX source; site use
 - `a2e98ba` — Rebuild personal site with Astro, replacing al-folio/Jekyll
 
 ## Status
-**Last Updated**: November 18, 2026, 17:42 (UTC+7)  
+**Last Updated**: November 18, 2026, 17:48 (UTC+7)  
 **AI Readiness**: 100%  
-**Status**: Astro site current — Labs on About; bold Journal/Conference tags; recent pubs added
+**Status**: Astro site current — author name bolded on publications; Labs; type tags
 
 **Next session**: Confirm Pages → GitHub Actions if live site still shows old theme; verify/correct journal IF–Q values if needed; update ResearchGate URL if needed; add papers via `publications.ts`.
 
 ## Change Log
+### 2026-11-18 — Bold author name on publications
+- Publications page bolds `Trong-Nghia Nguyen` (and `Trong Nghia Nguyen`) in every author list
+
 ### 2026-11-18 — Bolder Journal/Conference tag colors
 - Journal: solid red (`#c1121f`); Conference: solid dark blue (`#0b3d91`)
 
