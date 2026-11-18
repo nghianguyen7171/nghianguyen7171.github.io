@@ -277,13 +277,13 @@ p {
 }
 
 .tag-journal {
-  color: #1f4d4a;
-  background: rgba(31, 77, 74, 0.1);
+  color: #fff;
+  background: #0b3d91;
 }
 
 .tag-conference {
-  color: #5c4a2a;
-  background: rgba(140, 110, 50, 0.12);
+  color: #fff;
+  background: #c1121f;
 }
 
 .tag-index {
