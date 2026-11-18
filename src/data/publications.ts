@@ -23,6 +23,34 @@ export type Publication = {
 export const publications: Publication[] = [
   {
     title:
+      'MaRENet: Masked attention and Recurrent Encoding for transaction-level credit card fraud detection',
+    authors:
+      'Duc-Anh Nguyen, Kim-Ngan Thi Nguyen, Trong-Nghia Nguyen, Vu-Duc Ngo, Huan Vu, Tien-Cuong Nguyen, Mai Xuan Trang, Thien Van Luong',
+    venue: 'Cluster Computing',
+    year: 2026,
+    type: 'journal',
+    url: 'https://link.springer.com/article/10.1007/s10586-026-06747-w',
+    doi: '10.1007/s10586-026-06747-w',
+    indexing: 'SCIE',
+    if: 5.5,
+    quartile: 'Q1',
+  },
+  {
+    title:
+      'Multi-Type Clinical Interaction Modeling for Identifying Factors Associated with Cardiovascular Disease in Obstructive Sleep Apnea via an Interpretable Heterogeneous Graph Transformer',
+    authors:
+      'Thanh-Cong Do, Hyung-Jeong Yang, Myungeun Lee, Jinwon Heo, Hyung-Chae Yang, Jaehun Choi, Duy-Phuong Dao, Trong-Nghia Nguyen',
+    venue: 'Healthcare, Vol. 14, No. 22, 3869',
+    year: 2026,
+    type: 'journal',
+    url: 'https://www.mdpi.com/2227-9032/14/22/3869',
+    doi: '10.3390/healthcare14223869',
+    indexing: 'SCIE',
+    if: 3.4,
+    quartile: 'Q1',
+  },
+  {
+    title:
       'Band2CleanFormer: Integrating band-specific processing and inter-band attention for robust EEG denoising',
     authors: 'Battulga Ulziisaikhan, Trong-Nghia Nguyen, Soo-Hyung Kim',
     venue: 'Biomedical Signal Processing and Control, Vol. 119, 109860',

@@ -82,6 +82,8 @@ Ignored locally (not in git): `node_modules/`, `dist/`, `.astro/`
 - Fields: `type` (`journal` \| `conference`), optional `indexing`, `if`, `jcr`, `quartile`, `selected`
 - UI: All / Journals / Conferences filter; badges for type + SCIE / IF / JCR % / Q
 - Indexed journal metrics currently set (editable; verify against preferred JCR year if needed):
+  - Cluster Computing — SCIE · IF 5.5 · Q1
+  - Healthcare (MDPI) — SCIE · IF 3.4 · Q1
   - BSPC — SCIE · IF 5.7 · JCR 25% · Q2
   - PeerJ Computer Science — SCIE · IF 2.9 · Q2
   - IEEE Access — SCIE · IF 3.6 · Q2
@@ -114,13 +116,17 @@ Removed non-build leftovers: `archive/`, `CV_Nghia_ACD/` (LaTeX source; site use
 - `a2e98ba` — Rebuild personal site with Astro, replacing al-folio/Jekyll
 
 ## Status
-**Last Updated**: September 21, 2026, 21:40 (UTC+7)  
+**Last Updated**: November 18, 2026, 17:37 (UTC+7)  
 **AI Readiness**: 100%  
-**Status**: Astro site current — Labs on About; publication labels; SMILESGNN (MAPR 2026) added
+**Status**: Astro site current — Labs on About; publication labels; MaRENet + RiskHGT/Healthcare 2026 added
 
 **Next session**: Confirm Pages → GitHub Actions if live site still shows old theme; verify/correct journal IF–Q values if needed; update ResearchGate URL if needed; add papers via `publications.ts`.
 
 ## Change Log
+### 2026-11-18 — Add MaRENet and Healthcare (RiskHGT) journals
+- MaRENet: Cluster Computing; DOI 10.1007/s10586-026-06747-w; SCIE · IF 5.5 · Q1
+- Multi-Type Clinical Interaction Modeling…: Healthcare 14(22):3869; DOI 10.3390/healthcare14223869; SCIE · IF 3.4 · Q1
+
 ### 2026-09-21 — Add SMILESGNN (MAPR 2026)
 - Conference paper: SMILESGNN: Interpretable Clinical Toxicity Prediction via SMILES-Graph Cross-Attention Fusion
 - Venue: MAPR 2026, pp. 466–471; DOI 10.1109/MAPR72750.2026.11685822
